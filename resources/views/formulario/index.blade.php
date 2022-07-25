@@ -37,7 +37,7 @@
              color : black;
              padding : 4px;
              width : 100%;
-             height : 350px;
+             height : 320px;
              overflow : auto; marginwidth = 20px;">
                                     <ul>
                                         <p>DIME CLINICA NEUROCARDIOVASCULAR S.A. en adelante DIME CLÍNICA, en
@@ -174,7 +174,7 @@
                                     <div class="col-lg-1">
                                         <div class="col form-check">
                                             <input class="form-check-input" type="checkbox" name="si" id="si">
-                                            <label class="form-check-label" for="anonimo">
+                                            <label class="form-check-label" for="si">
                                                 Si
                                             </label>
                                         </div>
@@ -183,7 +183,7 @@
                                     <div class="col-lg-1">
                                         <div class="col form-check">
                                             <input class="form-check-input" type="checkbox" name="no" id="no">
-                                            <label class="form-check-label" for="anonimo">
+                                            <label class="form-check-label" for="no">
                                                 No
                                             </label>
                                         </div>
@@ -201,23 +201,25 @@
                                 <div class="row g-3">
 
                                     <div class="col-lg-4">
-                                        <div class="col form-check">
-                                            <input class="form-control" type="date" name="si" id="si">
+                                        <div class="col">
+                                            <input class="form-control" type="date" name="fecha" id="fecha" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;">
                                         </div>
-
                                     </div>
+
                                     <div class="col-lg-4">
-                                        <div class="col form-check">
-                                            <input class="form-control" type="text" name="no" id="no"
+                                        <div class="col">
+                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;"
                                                    placeholder="nombre completo">
-
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <div class="col form-check">
-                                            <input class="form-control" type="text" name="no" id="no"
-                                                   placeholder="telefono">
 
+                                    <div class="col-lg-4">
+                                        <div class="col">
+                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;"
+                                                   placeholder="telefono">
                                         </div>
                                     </div>
 
@@ -231,15 +233,17 @@
 
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="col form-check">
-                                            <input class="form-control" type="text" name="no" id="no"
+                                        <div class="col">
+                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;"
                                                    placeholder="numero del documento">
 
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="col form-check">
-                                            <input class="form-control" type="text" name="no" id="no"
+                                        <div class="col">
+                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;"
                                                    placeholder="celular*">
 
                                         </div>
@@ -248,23 +252,26 @@
                                     {{-- ///////////// --}}
 
                                     <div class="col-lg-4">
-                                        <div class="col form-check">
-                                            <input class="form-control" type="text" name="si" id="si"
+                                        <div class="col">
+                                            <input class="form-control" type="text" name="si" id="si" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;"
                                                    placeholder="ciudad">
 
                                         </div>
 
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="col form-check">
-                                            <input class="form-control" type="text" name="no" id="no"
+                                        <div class="col">
+                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;"
                                                    placeholder="Direccion de correspondencia">
 
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <div class="col form-check">
-                                            <input class="form-control" type="text" name="no" id="no"
+                                        <div class="col">
+                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;"
                                                    placeholder="celular">
 
                                         </div>
@@ -273,8 +280,9 @@
                                     {{-- ///////////// --}}
 
                                     <div class="col-lg-4">
-                                        <div class="col form-check">
-                                            <input class="form-control" type="text" name="si" id="si"
+                                        <div class="col">
+                                            <input class="form-control" type="text" name="si" id="si" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;"
                                                    placeholder="correo electronico">
 
                                         </div>
@@ -313,13 +321,13 @@
                                     </div>
 
                                 </div>
-                                <p>
+                                <p></p>
                                 <div class="row g-3">
                                     <div class="col-lg-8">
                                         <div class="col form-check">
                                             <input class="form-check-input" type="checkbox" name="check" value="1"
                                                    id="check" onclick="javascript:showContent()">
-                                            <label class="form-check-label" for="anonimo">
+                                            <label class="label" for="anonimo" >
                                                 En caso del que el usuario sea menor de edad o lo requiera, debe
                                                 autorizar un adulto responsable
                                             </label>
@@ -333,21 +341,24 @@
                                         <div class="row g-3">
 
                                             <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input class="form-control" type="date" name="si" id="si">
+                                                <div class="col">
+                                                    <input class="form-control" type="date" name="si" id="si" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;">
                                                 </div>
 
                                             </div>
                                             <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input class="form-control" type="text" name="no" id="no"
+                                                <div class="col ">
+                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;"
                                                            placeholder="nombre completo del acudiente">
 
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input class="form-control" type="text" name="no" id="no"
+                                                <div class="col ">
+                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;"
                                                            placeholder="telefono">
 
                                                 </div>
@@ -363,15 +374,17 @@
 
                                             </div>
                                             <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input class="form-control" type="text" name="no" id="no"
+                                                <div class="col ">
+                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;"
                                                            placeholder="numero del documento">
 
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input class="form-control" type="text" name="no" id="no"
+                                                <div class="col ">
+                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;"
                                                            placeholder="celular*">
 
                                                 </div>
@@ -380,23 +393,26 @@
                                             {{-- ///////////// --}}
 
                                             <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input class="form-control" type="text" name="si" id="si"
+                                                <div class="col ">
+                                                    <input class="form-control" type="text" name="si" id="si" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;"
                                                            placeholder="ciudad">
 
                                                 </div>
 
                                             </div>
                                             <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input class="form-control" type="text" name="no" id="no"
+                                                <div class="col ">
+                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;"
                                                            placeholder="Direccion de correspondencia">
 
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input class="form-control" type="text" name="no" id="no"
+                                                <div class="col ">
+                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;"
                                                            placeholder="celular">
 
                                                 </div>
@@ -405,8 +421,9 @@
                                             {{-- ///////////// --}}
 
                                             <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input class="form-control" type="text" name="si" id="si"
+                                                <div class="col ">
+                                                    <input class="form-control" type="text" name="si" id="si" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;"
                                                            placeholder="correo electronico">
 
                                                 </div>
@@ -481,6 +498,17 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <p>
+                                <div>
+                                    <button type="submit" class="btn btn-success" style="background-color:  #008200;width:100px;height:35px;">
+                                       <b> Enviar</b>
+                                    </button>
+
+                                </div>
+                            </div>
+<p>
+
 
                                 </html>
 
