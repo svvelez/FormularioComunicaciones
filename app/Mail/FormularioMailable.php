@@ -10,6 +10,7 @@ use Illuminate\Queue\SerializesModels;
 class FormularioMailable extends Mailable
 {
     use Queueable, SerializesModels;
+    public $formulario;
 
     /**
      * Create a new message instance.

@@ -52,8 +52,8 @@
 
                                     <br> <h5 style="color: #008200"><b>ACTUALIZACION DE DATOS PERSONALES</b></h5></br>
                                     <h5 style="color: black">Fecha de autorizacion: </h5>
-                                    <h5 style="color: black">Nombre Completo: </h5>
-                                    <h5 style="color: black">Telefono: </h5>
+                                    <h5 style="color: black">Nombre Completo:{{$formulario->actualizacionnombre}} </h5>
+                                    <h5 style="color: black">Telefono:{{$formulario->actualizaciontelefono}} </h5>
                                     <h5 style="color: black">Tipo de documento: </h5>
                                     <h5 style="color: black">Numero del documento: </h5>
                                     <h5 style="color: black">Celular: </h5>

@@ -15,30 +15,23 @@
                         <!-- Box -->
                         <div class="box box-success">
                             <!-- Box Header -->
-
                             <P>
                             <div class="box-header with-border">
-                                <h3 style="color:  #008200; text-align: left;"><b>AUTORIZACIÓN DE TRATAMIENTO DE DATOS
-                                        PERSONALES</b></h3>
-                                {{--   <hr style="color:  #008200"> --}}
+                                <h3 style="color:  #008200; text-align: left;"><b>AUTORIZACIÓN DE TRATAMIENTO DE DATOS PERSONALES</b></h3>
                             </div>
 
                             <P>
                             <div>
-
                                 <p>Apreciado usuario, en DIME Clínica Neurocardiovascular hemos actualizado nuestra
                                     política de tratamiento de datos personales, por ello te invitamos a
                                     conocer los cambios que hemos implementado para estar más conectados y cerca de
-                                    ti.</p>
+                                    ti.
+                                </p>
 
+                                {{-- scroll de politica de tratamiento de datos personales--}}
+                                <div style="border : solid 1px black;background : #ffffff;color : black;padding : 4px;width : 100%;height : 320px;
+                                overflow : auto; marginwidth = 20px;">
 
-                                <div style="border : solid 1px black;
-             background : #ffffff;
-             color : black;
-             padding : 4px;
-             width : 100%;
-             height : 320px;
-             overflow : auto; marginwidth = 20px;">
                                     <ul>
                                         <p>DIME CLINICA NEUROCARDIOVASCULAR S.A. en adelante DIME CLÍNICA, en
                                             cumplimiento de la ley estatutaria 1581 de 2012 "por la cual se dictan
@@ -117,49 +110,56 @@
                                     <ul><p>En cualquier momento usted como titular de los datos personales puede
                                             solicitar la supresión, modificación, corrección o actualización de su
                                             contenido en nuestra base de datos enviando una comunicación escrita a la
-                                            dirección o correo electrónico mencionados anteriormente.</p></ul>
+                                            dirección o correo electrónico mencionados anteriormente.
+                                        </p></ul>
                                     <ul><p><b>Derechos.</b> Declaro que conozco los derechos de habeas data que me
                                             asisten como titular de los Datos Personales y Datos Sensibles,
                                             particularmente, los derechos a conocer, actualizar, rectificar, suprimir
                                             los Datos Personales o revocar la autorización aquí otorgada, en los
                                             términos y bajo el procedimiento consagrado en la Política. Igualmente, que
-                                            soy consciente de los alcances jurídicos de esta autorización. </p></ul>
+                                            soy consciente de los alcances jurídicos de esta autorización.
+                                    </p></ul>
                                     <ul><p><b>Duración.</b> La Compañía podrá realizar el Tratamiento de mis Datos
                                             Personales por todo el tiempo que sea necesario para cumplir con las
                                             finalidades descritas en este documento y para que pueda desarrollar y tener
                                             registro de sus actividades asistenciales, comerciales y administrativas.
-                                        </p></ul>
+                                    </p></ul>
                                 </div>
                             </div>
+
                             <p>
+
                             <div>
-                                <p>Autorizo a DIME CLÍNICA de manera expresa, concreta, suficiente, voluntaria e
+                                <p>
+                                    Autorizo a DIME CLÍNICA de manera expresa, concreta, suficiente, voluntaria e
                                     informada con la finalidad que la información de la cual soy titular, o he otorgado
                                     con el fin de cumplir con la información requerida, para dar cumplimiento con las
                                     políticas institucionales y las demás que se refieran a la información personal
                                     necesaria para los fines mencionados en la presente autorización, sea en general
                                     administrada y en especial: captada, tratada, procesada, operada, verificada, y
-                                    usada</p>
+                                    usada
+                                </p>
 
 
-                                <div class="row g-3" name="autorizacion">
+                                <div class="row g-3">
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="si" id="si" value="si">
+                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacion" id="si" value="si">
                                             <label class="form-check-label" for="anonimo">
                                                 Si
                                             </label>
                                         </div>
-
                                     </div>
+
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="no" id="no" value="no">
+                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="autorizacion" id="no" value="no">
                                             <label class="form-check-label" for="anonimo">
                                                 No
                                             </label>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -169,7 +169,9 @@
                             <div>
                                 <p>De igual forma autorizo voluntariamente a DIME CLINICA para que envíe mensajes con el
                                     fin de Informar acerca de los servicios de salud de la Clínica, campañas de
-                                    prevención, promoción y en general remitir pautas publicitarias.</p>
+                                    prevención, promoción y en general remitir pautas publicitarias.
+                                </p>
+
                                 <div class="row g-3">
                                     <div class="col-lg-1">
                                         <div class="col form-check">
@@ -178,8 +180,8 @@
                                                 Si
                                             </label>
                                         </div>
-
                                     </div>
+
                                     <div class="col-lg-1">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="no" id="no">
@@ -188,18 +190,20 @@
                                             </label>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
-                            <p></p>
 
+                            <br>
+                            {{--formulario actualizacion de datos personales--}}
 
                             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
                                 <div class="header">
                                     <h3 style="color: #008200"><b>ACTUALIZACIÓN DE DATOS PERSONALES</b></h3>
                                     <hr style="color:  #008200;">
                                 </div>
-                                <div class="row g-3">
 
+                                <div class="row g-3">
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Fecha de autorización</label><label style="color: red;text-align: left;">*</label>
@@ -226,155 +230,139 @@
                                         </div>
                                     </div>
 
-                                    {{-- ///////////// --}}
+                                    {{-- segunda fila de actualizacion de datos personales--}}
 
+                                    {{--checks de tipo de documento--}}
                                     <div class="col-lg-4">
-
                                         <div class="col">
                                             <label style="text-align: left;">Tipo de documento</label><label style="color: red;text-align: left;">*</label>
 
                                             <div class="row g-3">
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="CC" id="CC">
-                                                        <label class="form-check-label" for="CC">
-                                                            CC
-                                                        </label>
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="CC" id="CC" value="CC">
+                                                        <label class="form-check-label" for="CC"> CC </label>
                                                     </div>
                                                 </div>
-                                                   <br>
+
+                                                <br>
+
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="NI" id="NI">
-                                                        <label class="form-check-label" for="NI">
-                                                            NI
-                                                        </label>
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="NI" id="NI" value="NI">
+                                                        <label class="form-check-label" for="NI"> NI</label>
                                                     </div>
                                                 </div>
-                                              <br>
+
+                                                <br>
+
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="TI" id="TI">
-                                                        <label class="form-check-label" for="TI">
-                                                            TI
-                                                        </label>
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="TI" id="TI" value="TI">
+                                                        <label class="form-check-label" for="TI">TI </label>
                                                     </div>
                                                 </div>
-                                               <br>
+
+                                                <br>
+
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="CE" id="CE">
-                                                        <label class="form-check-label" for="CE">
-                                                            CE
-                                                        </label>
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="CE" id="CE" value="CE">
+                                                        <label class="form-check-label" for="CE"> CE </label>
                                                     </div>
                                                 </div>
 
                                             </div>
 
                                         </div>
-
-
                                     </div>
+
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Numero del documento</label><label style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                   placeholder="">
-
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
+
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Celular</label><label style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                   placeholder="">
-
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
 
-                                    {{-- ///////////// --}}
+                                    {{-- tercera fila de actualización de datos personales --}}
 
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Ciudad</label><label style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="si" id="si" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                   placeholder="">
-
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
-
                                     </div>
+
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Dirección de correspondencia</label><label style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                   placeholder="">
-
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
+
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Celular</label>
                                             <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                   placeholder="">
-
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
 
-                                    {{-- ///////////// --}}
+                                    {{-- cuarta fila de actualización de datos personales --}}
 
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Correo Electrónico</label>
                                             <input class="form-control" type="text" name="email" id="email" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                   placeholder="">
-
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
-
                                     </div>
-                                    <div class="col-lg-4">
-                                        <div class="col ">
 
+                                    <div class="col-lg-4">
+                                        <div class="col">
                                             <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="propio" id="propio">
-                                            <label class="form-check-label" for="propio">
-                                                Propio
-                                            </label>
+                                            <label class="form-check-label" for="propio">Propio </label>
                                         </div>
                                     </div>
+
                                     <div class="col-lg-4">
                                         <div class="col ">
-
                                             <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="terceroautorizado"
                                                    id="terceroautorizado">
-                                            <label class="form-check-label" for="terceroautorizado">
-                                                Tercero autorizado
-                                            </label> <label style="color: red;text-align: left;">*</label>
-                                        </div>
-                                    </div>
-
-
-                                    {{-- ///////////// --}}
-
-<p>
-                                    <div class="col-lg-6">
-                                        <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="si" id="si">
-                                            <label class="form-check-label" for="anonimo">
-                                                He leído, y entiendo siendo debidamente informado (a), autorizo y
-                                                acepto.
-                                            </label>
+                                            <label class="form-check-label" for="terceroautorizado">Tercero autorizado</label> <label style="color: red;text-align: left;">*</label>
                                         </div>
                                     </div>
 
                                 </div>
-                                <p></p>
-                                <div class="row g-3">
+                            </div>
+
+
+                            {{-- ///////////// --}}
+                            <p>
+                            <div class="col-lg-6">
+                                <div class="col form-check">
+                                    <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="si" id="si">
+                                    <label class="form-check-label" for="anonimo">
+                                                He leído, y entiendo siendo debidamente informado (a), autorizo y
+                                                acepto.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <p></p>
+
+                            <div class="row g-3">
                                     <div class="col-lg-8">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="check" value="1"
@@ -384,82 +372,75 @@
                                                 autorizar un adulto responsable
                                             </label>
                                         </div>
-
                                     </div>
 
-                                    {{-- si es menor de edad sale este formulario --}}
+                                    {{-- si es menor de edad sale este formulario para llenar datos de acudiente--}}
 
                                     <div id="content" style="display: none;">
-                                        <div class="row g-3">
 
+                                        <div class="row g-3">
                                             <div class="col-lg-4">
                                                 <div class="col">
                                                     <label style="text-align: left;">Fecha de autorización</label>
                                                     <input class="form-control" type="date" name="si" id="si" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;">
                                                 </div>
-
                                             </div>
+
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Nombre completo del acudiente</label>
                                                     <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                                 </div>
                                             </div>
+
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Teléfono</label>
                                                     <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                                 </div>
                                             </div>
 
-                                            {{-- ///////////// --}}
+                                            {{--segunda fila de formulario acudiente --}}
 
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Tipo de documento</label>
 
-
                                                     <div class="row g-3">
                                                         <div class="col-lg-1">
                                                             <div class="col form-check">
                                                                 <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="ccacudiente" id="ccacudiente">
-                                                                <label class="form-check-label" for="ccacudiente">
-                                                                    CC
-                                                                </label>
+                                                                <label class="form-check-label" for="ccacudiente">CC</label>
                                                             </div>
                                                         </div>
-                                                           <br>
+
+                                                        <br>
+
                                                         <div class="col-lg-1">
                                                             <div class="col form-check">
                                                                 <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="niacudiente" id="niacudiente">
-                                                                <label class="form-check-label" for="niacudiente">
-                                                                    NI
-                                                                </label>
+                                                                <label class="form-check-label" for="niacudiente">NI</label>
                                                             </div>
                                                         </div>
-                                                      <br>
+
+                                                        <br>
+
                                                         <div class="col-lg-1">
                                                             <div class="col form-check">
                                                                 <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tiacudiente" id="tiacudiente">
-                                                                <label class="form-check-label" for="tiacudiente">
-                                                                    TI
-                                                                </label>
+                                                                <label class="form-check-label" for="tiacudiente">TI</label>
                                                             </div>
                                                         </div>
+
                                                        <br>
+
                                                         <div class="col-lg-1">
                                                             <div class="col form-check">
                                                                 <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="ceacudiente" id="ceacudiente">
-                                                                <label class="form-check-label" for="ceacudiente">
-                                                                    CE
-                                                                </label>
+                                                                <label class="form-check-label" for="ceacudiente">CE</label>
                                                             </div>
                                                         </div>
 
@@ -605,61 +586,62 @@
                                     <button type="submit" class="btn btn-success" style="background-color:  #008200;width:100px;height:35px;">
                                        <b> Enviar</b>
                                     </button>
-
                                 </div>
                             </div>
-<p>
+                            <br>
+
+ </html>
+
+                       {{--mostrar formulario para datos del acudiente si es menor de edad--}}
+                        <script type="text/javascript">
+                            function showContent() {
+                                element = document.getElementById("content");
+                                check = document.getElementById("check");
+                                if (check.checked) {
+
+                                    element.style.display = 'block';
+                                } else {
+                                    element.style.display = 'none';
+                                }
+                            }
+                        </script>
 
 
-                                </html>
-
-                                <script type="text/javascript">
-                                    function showContent() {
-                                        element = document.getElementById("content");
-                                        check = document.getElementById("check");
-                                        if (check.checked) {
-
-                                            element.style.display = 'block';
-                                        } else {
-                                            element.style.display = 'none';
-                                        }
+                        {{--envio de formulario--}}
+                        <script>
+                            $(document).ready(function () {
+                                $.ajaxSetup({
+                                    headers: {
+                                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                                     }
-                                </script>
+                                });
+                                $("#formulario").submit(function (e) {
+                                    e.preventDefault();
 
-<script>
-    $(document).ready(function () {
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-        $("#formulario").submit(function (e) {
-            e.preventDefault();
+                                    var formulario = new FormData(this);
+                                    $.ajax({
+                                        type: 'POST',
+                                        url: "{{url('formulario')}}",
+                                        data: formulario,
+                                        cache: false,
+                                        contentType: false,
+                                        processData: false,
+                                        success: function (data) {
+                                            console.log(data);
+                                            swal.fire(" Enviados ", " Formulario Enviado Sastifactoriamente ", "success").then(() => {
+                                                window.location.href = "{{ route('formulario.index') }}"
+                                            });
+                                        },
+                                        error: function (json, xhr, status) {
+                                            swal.fire(" ¡no enviado! ",
+                                                "Complete toda la informacion requerida", "error");
+                                        }
+                                    });
+                                });
 
-            var formulario = new FormData(this);
-            $.ajax({
-                type: 'POST',
-                url: "{{url('formulario')}}",
-                data: formulario,
-                cache: false,
-                contentType: false,
-                processData: false,
-                success: function (data) {
-                    console.log(data);
-                        swal.fire(" Enviados ", " Formulario Enviado Sastifactoriamente ", "success").then(() => {
-                            window.location.href = "{{ route('formulario.index') }}"
-                        });
-                },
-                error: function (json, xhr, status) {
-                    swal.fire(" ¡no enviado! ",
-                        "Complete toda la informacion requerida", "error");
-                }
-            });
-        });
-
-    });
+                            });
 
 
-</script>
+                        </script>
 
 @endsection

@@ -31,6 +31,10 @@ class FormularioComunicacionController extends Controller
 
     public function store(Request $request)
     {
+
+/* dd($request->actualizacionnombre); */
+
+
         $destino_nombre=$request->nombre;
         $destino_email="practicantedevtic1@dime.com.co";
         $email = new \App\Mail\FormularioMailable($request);
