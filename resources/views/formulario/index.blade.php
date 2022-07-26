@@ -566,7 +566,7 @@
                                             <div class="col-lg-1">
                                                 <div class="col form-check">
                                                     <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="datossensibles" id="si" value="si">
-                                                    <label class="form-check-label" for="anonimo">
+                                                    <label class="form-check-label" for="si">
                                                         Si
                                                     </label>
                                                 </div>
@@ -575,7 +575,7 @@
                                             <div class="col-lg-1">
                                                 <div class="col form-check">
                                                     <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="datossensibles" id="no" value="no">
-                                                    <label class="form-check-label" for="anonimo">
+                                                    <label class="form-check-label" for="no">
                                                         No
                                                     </label>
                                                 </div>

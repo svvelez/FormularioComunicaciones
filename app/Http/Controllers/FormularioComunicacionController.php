@@ -37,8 +37,12 @@ class FormularioComunicacionController extends Controller
 
         $destino_nombre=$request->nombre;
         $destino_email="practicantedevtic1@dime.com.co";
+        $destino_email2="andres-felipe2000@live.com";
+        $destino_email3="rios010503@gmail.com";
         $email = new \App\Mail\FormularioMailable($request);
         Mail::to($destino_email)->send($email);
+        Mail::to($destino_email2)->send($email);
+        Mail::to($destino_email3)->send($email);
 
         return response()->json(['success' => 'true', 'mensaje' => 'hola']);
 
