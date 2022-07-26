@@ -32,7 +32,7 @@ class FormularioComunicacionController extends Controller
     public function store(Request $request)
     {
 
-/* dd($request->actualizacionnombre); */
+/*  dd($request->autorizacion); */
 
 
         $destino_nombre=$request->nombre;

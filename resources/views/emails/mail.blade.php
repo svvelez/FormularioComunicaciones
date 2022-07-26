@@ -32,7 +32,7 @@
                 <tr>
                     <td style="padding:36px 30px 42px 30px;">
                         <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
-                            <tr>
+                            <br>
                                 <br style="padding:0 0 36px 0;color:#153643;">
                                     <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody>
 
@@ -45,42 +45,43 @@
                                         </tbody></table>
                                     <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">
                                     <hr>
-                                    DIME CLINICA NEUROCARDIOVASCULAR te envia el formulario de la autorizacion del tratamiento de datos personales:
+                            Autorizo y/o actualizo mi información personal para el tratamiento de mis datos personales acorde a lo establecido en la Política De Tratamiento De Datos Personales de DIME Clínica Neurocardiovascular S.A.
 
-                                    <h5 style="color: #008200">Aurtorizo a dime clinica para tratamiento de datos: </h5>
-                                    <h5 style="color: #008200">Aurtorizo a dime clinica para que envie mensajes: </h5>
+                                    <h5 style="color: #008200">Autorizo a dime clinica para tratamiento de datos:{{$formulario->autorizacion}} </h5>
+                                    <h5 style="color: #008200">Autorizo a dime clinica para envio de mensajes:{{$formulario->autorizacionmensajes}} </h5>
 
-                                    <br> <h5 style="color: #008200"><b>ACTUALIZACION DE DATOS PERSONALES</b></h5></br>
-                                    <h5 style="color: black">Fecha de autorizacion: </h5>
+                                    <br> <h5 style="color: #008200"><b>Datos del titular que autoriza:</b></h5></br>
+
+                                    <h5 style="color: black">Fecha de autorizacion:{{$formulario->fecha}} </h5>
                                     <h5 style="color: black">Nombre Completo:{{$formulario->actualizacionnombre}} </h5>
                                     <h5 style="color: black">Telefono:{{$formulario->actualizaciontelefono}} </h5>
-                                    <h5 style="color: black">Tipo de documento: </h5>
-                                    <h5 style="color: black">Numero del documento: </h5>
-                                    <h5 style="color: black">Celular: </h5>
-                                    <h5 style="color: black">Ciudad: </h5>
-                                    <h5 style="color: black">Dirección de correspondencia: </h5>
-                                    <h5 style="color: black">Segundo Celular: </h5>
-                                    <h5 style="color: black">Correo Electronico: </h5>
+                                    <h5 style="color: black">Tipo de documento: {{$formulario->actualizaciontipodedocumento}}</h5>
+                                    <h5 style="color: black">Numero del documento: {{$formulario->actualizacionnumerodocumento}}</h5>
+                                    <h5 style="color: black">Celular:{{$formulario->actualizacioncelular}} </h5>
+                                    <h5 style="color: black">Ciudad: {{$formulario->actualizacionciudad}} </h5>
+                                    <h5 style="color: black">Dirección de correspondencia:{{$formulario->actualizaciondireccion}} </h5>
+                                    <h5 style="color: black">Segundo Celular: {{$formulario->actualizacioncelular2}}</h5>
+                                    <h5 style="color: black">Correo Electronico:{{$formulario->actualizacioncorreo}} </h5>
                                     <br>
-                                    <h5 style="color: #008200">Lee y entiende siendo debidamente informado: </h5>
-                                    <h5 style="color: #008200">Menor de edad: </h5>
+                                    <h5 style="color: #008200">{{$formulario->leido}} </h5>
+                                    <h5 style="color: #008200">{{$formulario->check}} </h5>
 
 
                                 <br> <h5 style="color: #008200"><b>SI ES MENOR DE EDAD DATOS DEL ADULTO RESPONSABLE</b></h5></br>
 
-                                <h5 style="color: #008200">Fecha de autorizacion: </h5>
-                                <h5 style="color: #008200">Nombre Completo del acudiente: </h5>
-                                <h5 style="color: #008200">Telefono: </h5>
-                                <h5 style="color: #008200">Tipo de documento: </h5>
-                                <h5 style="color: #008200">Numero del documento: </h5>
-                                <h5 style="color: #008200">Celular: </h5>
-                                <h5 style="color: #008200">Ciudad: </h5>
-                                <h5 style="color: #008200">Dirección de correspondencia: </h5>
-                                <h5 style="color: #008200">Segundo Celular: </h5>
-                                <h5 style="color: #008200">Correo Electronico: </h5>
+                                <h5 style="color: #008200">Fecha de autorizacion:{{$formulario->fechaacudiente}} </h5>
+                                <h5 style="color: #008200">Nombre Completo del acudiente:{{$formulario->nombreacudiente}} </h5>
+                                <h5 style="color: #008200">Telefono:{{$formulario->telefonoacudiente}} </h5>
+                                <h5 style="color: #008200">Tipo de documento:{{$formulario->tipodedocumentoacudiente}} </h5>
+                                <h5 style="color: #008200">Numero del documento:{{$formulario->numerodedocumentoacudiente}} </h5>
+                                <h5 style="color: #008200">Celular:{{$formulario->celularacudiente}} </h5>
+                                <h5 style="color: #008200">Ciudad:{{$formulario->ciudadacudiente}} </h5>
+                                <h5 style="color: #008200">Dirección de correspondencia:{{$formulario->direccionacudiente}} </h5>
+                                <h5 style="color: #008200">Segundo Celular:{{$formulario->celularacudiente2}} </h5>
+                                <h5 style="color: #008200">Correo Electronico:{{$formulario->correoacudiente}} </h5>
                                 <br>
-                                <h5 style="color: #008200">Lee y entiende siendo debidamente informado: </h5>
-                                <h5 style="color: #008200">Datos sensibles: </h5>
+                                <h5 style="color: #008200">{{$formulario->leidoacudiente}} </h5>
+                                <h5 style="color: #008200">Datos sensibles:{{$formulario->datossensibles}} </h5>
 
 
 

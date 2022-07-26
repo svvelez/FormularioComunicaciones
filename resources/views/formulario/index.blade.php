@@ -126,7 +126,8 @@
                                     </p></ul>
                                 </div>
                             </div>
-
+                        </div>
+                    </div>
                             <p>
 
                             <div>
@@ -145,7 +146,7 @@
                                     <div class="col-lg-1">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacion" id="si" value="si">
-                                            <label class="form-check-label" for="anonimo">
+                                            <label class="form-check-label" for="si">
                                                 Si
                                             </label>
                                         </div>
@@ -154,7 +155,7 @@
                                     <div class="col-lg-1">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="autorizacion" id="no" value="no">
-                                            <label class="form-check-label" for="anonimo">
+                                            <label class="form-check-label" for="no">
                                                 No
                                             </label>
                                         </div>
@@ -175,7 +176,7 @@
                                 <div class="row g-3">
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="si" id="si">
+                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacionmensajes" id="si" value="si">
                                             <label class="form-check-label" for="si">
                                                 Si
                                             </label>
@@ -184,7 +185,7 @@
 
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="no" id="no">
+                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacionmensajes" id="no" value="no">
                                             <label class="form-check-label" for="no">
                                                 No
                                             </label>
@@ -224,7 +225,7 @@
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Teléfono</label>
-                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="actualizaciontelefono" id="actualizaciontelefono" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                    placeholder="">
                                         </div>
@@ -240,7 +241,7 @@
                                             <div class="row g-3">
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="CC" id="CC" value="CC">
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="CC" value="CC">
                                                         <label class="form-check-label" for="CC"> CC </label>
                                                     </div>
                                                 </div>
@@ -249,7 +250,7 @@
 
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="NI" id="NI" value="NI">
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="NI" value="NI">
                                                         <label class="form-check-label" for="NI"> NI</label>
                                                     </div>
                                                 </div>
@@ -258,7 +259,7 @@
 
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="TI" id="TI" value="TI">
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="TI" value="TI">
                                                         <label class="form-check-label" for="TI">TI </label>
                                                     </div>
                                                 </div>
@@ -267,7 +268,7 @@
 
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="CE" id="CE" value="CE">
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="CE" value="CE">
                                                         <label class="form-check-label" for="CE"> CE </label>
                                                     </div>
                                                 </div>
@@ -280,7 +281,7 @@
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Numero del documento</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="actualizacionnumerodocumento" id="actualizacionnumerodocumento" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
@@ -288,7 +289,7 @@
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Celular</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="actualizacioncelular" id="actualizacioncelular" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
@@ -298,7 +299,7 @@
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Ciudad</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="si" id="si" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="actualizacionciudad" id="actualizacionciudad" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
@@ -306,7 +307,7 @@
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Dirección de correspondencia</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="actualizaciondireccion" id="actualizaciondireccion" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
@@ -314,7 +315,7 @@
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Celular</label>
-                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="actualizacioncelular2" id="actualizacioncelular2" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
@@ -324,14 +325,14 @@
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Correo Electrónico</label>
-                                            <input class="form-control" type="text" name="email" id="email" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="actualizacioncorreo" id="actualizacioncorreo" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="propio" id="propio">
+                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="propio" id="propio" value="propio">
                                             <label class="form-check-label" for="propio">Propio </label>
                                         </div>
                                     </div>
@@ -339,7 +340,7 @@
                                     <div class="col-lg-4">
                                         <div class="col ">
                                             <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="terceroautorizado"
-                                                   id="terceroautorizado">
+                                                   id="terceroautorizado" value="terceroautorizado">
                                             <label class="form-check-label" for="terceroautorizado">Tercero autorizado</label> <label style="color: red;text-align: left;">*</label>
                                         </div>
                                     </div>
@@ -352,7 +353,8 @@
                             <p>
                             <div class="col-lg-6">
                                 <div class="col form-check">
-                                    <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="si" id="si">
+                                    <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="leido" id="si" value="He leído, y entiendo siendo debidamente informado (a), autorizo y
+                                                acepto.">
                                     <label class="form-check-label" for="anonimo">
                                                 He leído, y entiendo siendo debidamente informado (a), autorizo y
                                                 acepto.
@@ -365,7 +367,7 @@
                             <div class="row g-3">
                                     <div class="col-lg-8">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="check" value="1"
+                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="check" value="soy menor de edad"
                                                    id="check" onclick="javascript:showContent()">
                                             <label class="label" for="anonimo" >
                                                 En caso del que el usuario sea menor de edad o lo requiera, debe
@@ -382,7 +384,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col">
                                                     <label style="text-align: left;">Fecha de autorización</label>
-                                                    <input class="form-control" type="date" name="si" id="si" style="cursor: pointer;
+                                                    <input class="form-control" type="date" name="fechaacudiente" id="fechaacudiente" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;">
                                                 </div>
                                             </div>
@@ -390,7 +392,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Nombre completo del acudiente</label>
-                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    <input class="form-control" type="text" name="nombreacudiente" id="nombreacudiente" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                                 </div>
                                             </div>
@@ -398,7 +400,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Teléfono</label>
-                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    <input class="form-control" type="text" name="telefonoacudiente" id="telefonoacudiente" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
                                                 </div>
                                             </div>
@@ -412,7 +414,7 @@
                                                     <div class="row g-3">
                                                         <div class="col-lg-1">
                                                             <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="ccacudiente" id="ccacudiente">
+                                                                <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="tipodedocumentoacudiente" id="tipodedocumentoacudiente" value="CC">
                                                                 <label class="form-check-label" for="ccacudiente">CC</label>
                                                             </div>
                                                         </div>
@@ -421,7 +423,7 @@
 
                                                         <div class="col-lg-1">
                                                             <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="niacudiente" id="niacudiente">
+                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentoacudiente" id="niacudiente" value="NI">
                                                                 <label class="form-check-label" for="niacudiente">NI</label>
                                                             </div>
                                                         </div>
@@ -430,7 +432,7 @@
 
                                                         <div class="col-lg-1">
                                                             <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tiacudiente" id="tiacudiente">
+                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentoacudiente" id="tiacudiente" value="TI">
                                                                 <label class="form-check-label" for="tiacudiente">TI</label>
                                                             </div>
                                                         </div>
@@ -439,7 +441,7 @@
 
                                                         <div class="col-lg-1">
                                                             <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="ceacudiente" id="ceacudiente">
+                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentoacudiente" id="ceacudiente" value="CE">
                                                                 <label class="form-check-label" for="ceacudiente">CE</label>
                                                             </div>
                                                         </div>
@@ -452,7 +454,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Número del documento</label>
-                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    <input class="form-control" type="text" name="numerodedocumentoacudiente" id="no" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                            placeholder="">
 
@@ -461,7 +463,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Celular</label>
-                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    <input class="form-control" type="text" name="celularacudiente" id="no" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                            placeholder="">
 
@@ -473,7 +475,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Ciudad</label>
-                                                    <input class="form-control" type="text" name="si" id="si" style="cursor: pointer;
+                                                    <input class="form-control" type="text" name="ciudadacudiente" id="si" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                            placeholder="">
 
@@ -483,7 +485,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Dirección de correspondencia</label>
-                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    <input class="form-control" type="text" name="direccionacudiente" id="no" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                            placeholder="">
 
@@ -492,7 +494,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Celular</label>
-                                                    <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                                    <input class="form-control" type="text" name="celularacudiente2" id="no" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                            placeholder="">
 
@@ -504,7 +506,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col ">
                                                     <label style="text-align: left;">Correo Electrónico</label>
-                                                    <input class="form-control" type="text" name="si" id="si" style="cursor: pointer;
+                                                    <input class="form-control" type="text" name="correoacudiente" id="si" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                            placeholder="">
 
@@ -513,7 +515,7 @@
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="col form-check">
-                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="propio"
+                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="propioac"
                                                            id="propio">
                                                     <label class="form-check-label" for="propio">
                                                         Propio
@@ -523,7 +525,7 @@
                                             <div class="col-lg-4">
                                                 <div class="col form-check">
                                                     <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox"
-                                                           name="terceroautorizado" id="terceroautorizado">
+                                                           name="acudiente" id="acudiente">
                                                     <label class="form-check-label" for="terceroautorizado">
                                                         Acudiente
                                                     </label>
@@ -536,7 +538,8 @@
 
                                             <div class="col-lg-6">
                                                 <div class="col form-check">
-                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="si" id="si">
+                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="leidoacudiente" id="leidoacudiente" value="He leído, y entiendo siendo debidamente informado (a), autorizo
+                                                        y acepto.">
                                                     <label class="form-check-label" for="anonimo">
                                                         He leído, y entiendo siendo debidamente informado (a), autorizo
                                                         y acepto.
@@ -562,7 +565,7 @@
                                         <div class="row g-3">
                                             <div class="col-lg-1">
                                                 <div class="col form-check">
-                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="si" id="si">
+                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="datossensibles" id="si" value="si">
                                                     <label class="form-check-label" for="anonimo">
                                                         Si
                                                     </label>
@@ -571,7 +574,7 @@
                                             </div>
                                             <div class="col-lg-1">
                                                 <div class="col form-check">
-                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="no" id="no">
+                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="datossensibles" id="no" value="no">
                                                     <label class="form-check-label" for="anonimo">
                                                         No
                                                     </label>
@@ -590,6 +593,9 @@
                             </div>
                             <br>
 
+            </form>
+        </div>
+    </div>
  </html>
 
                        {{--mostrar formulario para datos del acudiente si es menor de edad--}}
@@ -607,7 +613,7 @@
                         </script>
 
 
-                        {{--envio de formulario--}}
+                      {{-- envio de formulario--}}
                         <script>
                             $(document).ready(function () {
                                 $.ajaxSetup({

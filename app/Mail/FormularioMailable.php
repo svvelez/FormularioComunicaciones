@@ -31,6 +31,6 @@ class FormularioMailable extends Mailable
     {
         return $this->view('emails.mail')
         ->from("soporteweb@dime.com.co")
-        ->subject("Formulario comunicaciones");
+        ->subject("AUTORIZACIÓN/ACTUALIZACIÓN DATOS PERSONALES - WEB DIME");
     }
 }
