@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormularioComunicacionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,4 @@ Route::get('/', function () {
     return view('formulario.index');
 });
 
-Route::resource('formulario',FormularioController::class);
+Route::resource('formulario',FormularioComunicacionController::class);

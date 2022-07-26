@@ -142,10 +142,10 @@
                                     usada</p>
 
 
-                                <div class="row g-3">
+                                <div class="row g-3" name="autorizacion">
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="si" id="si">
+                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="si" id="si" value="si">
                                             <label class="form-check-label" for="anonimo">
                                                 Si
                                             </label>
@@ -154,7 +154,7 @@
                                     </div>
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="no" id="no">
+                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="no" id="no" value="no">
                                             <label class="form-check-label" for="anonimo">
                                                 No
                                             </label>
@@ -211,7 +211,7 @@
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Nombre Completo</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="no" id="no" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="actualizacionnombre" id="actualizacionnombre" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                    placeholder="">
                                         </div>
@@ -331,7 +331,7 @@
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Correo Electrónico</label>
-                                            <input class="form-control" type="text" name="si" id="si" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="email" id="email" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                    placeholder="">
 
@@ -626,6 +626,40 @@
                                     }
                                 </script>
 
+<script>
+    $(document).ready(function () {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $("#formulario").submit(function (e) {
+            e.preventDefault();
 
+            var formulario = new FormData(this);
+            $.ajax({
+                type: 'POST',
+                url: "{{url('formulario')}}",
+                data: formulario,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    console.log(data);
+                        swal.fire(" Enviados ", " Formulario Enviado Sastifactoriamente ", "success").then(() => {
+                            window.location.href = "{{ route('formulario.index') }}"
+                        });
+                },
+                error: function (json, xhr, status) {
+                    swal.fire(" ¡no enviado! ",
+                        "Complete toda la informacion requerida", "error");
+                }
+            });
+        });
+
+    });
+
+
+</script>
 
 @endsection
