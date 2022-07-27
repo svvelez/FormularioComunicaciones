@@ -114,12 +114,76 @@
                                     <br>
                             <ul>
                                 <li style="color: black">{{$formulario->leido}} </li>
-                                <li style="color: black">{{$formulario->check}} </li>
+{{--                                <li style="color: black">{{$formulario->check}} </li>--}}
                             </ul>
 
+                            {{--FORMULARIO SI HAY TERCERO AUTORIZADO--}}
+<div>
+
+    <br> <h4 style="color: #008200"><b>DATOS DE TERCERO AUTORIZADO:</b></h4></br>
+
+    <div class="col ">
+        <label style="color: #008200;">Fecha de autorización:</label>
+        <label>{{$formulario->fechatercero}}</label>
+    </div>
+
+    <div class="col ">
+        <label style="color: #008200;">Nombre Completo:</label>
+        <label>{{$formulario->nombretercero}}</label>
+    </div>
+
+    <div class="col ">
+        <label style="color: #008200;">Telefono:</label>
+        <label>{{$formulario->telefonotercero}}</label>
+    </div>
+
+    <div class="col ">
+        <label style="color: #008200;">Tipo de documento:</label>
+        <label>{{$formulario->tipodedocumentotercero}}</label>
+    </div>
+
+    <div class="col ">
+        <label style="color: #008200;">Número del documento:</label>
+        <label>{{$formulario->numerodocumentotercero}}</label>
+    </div>
+
+    <div class="col ">
+        <label style="color: #008200;">Celular:</label>
+        <label>{{$formulario->celulartercero}}</label>
+    </div>
+
+    <div class="col ">
+        <label style="color: #008200;">Ciudad:</label>
+        <label>{{$formulario->ciudadtercero}}</label>
+    </div>
+
+    <div class="col ">
+        <label style="color: #008200;">Dirección de correspondencia:</label>
+        <label>{{$formulario->direcciontercero}}</label>
+    </div>
+
+    <div class="col ">
+        <label style="color: #008200;">Celular(2):</label>
+        <label>{{$formulario->celular2tercero}}</label>
+    </div>
+
+    <div class="col ">
+        <label style="color: #008200;">Correo Electronico:</label>
+        <label>{{$formulario->correotercero}}</label>
+    </div>
+
+
+    <br>
+    <ul>
+        <li style="color: black">{{$formulario->leidotercero}} </li>
+        {{--                                <li style="color: black">{{$formulario->check}} </li>--}}
+    </ul>
+</div>
 
 
 
+                            {{--RESPUESTAS FORMULARIO DE ADULTO RESPONSABLE--}}
+{{--                            <div id="menordeedad" style="display: none;">--}}
                                 <br> <h5 style="color: #008200"><b>SI ES MENOR DE EDAD DATOS DEL ADULTO RESPONSABLE</b></h5></br>
 
                             <div class="col ">
@@ -189,7 +253,7 @@
 
 
                                     <hr>
-
+{{--</div>--}}
                                 </td>
                             </tr>
 
@@ -218,3 +282,18 @@
 </table>
 </body>
 </html>
+
+{{--<script>--}}
+{{--    function showContent() {--}}
+{{--        element = document.getElementById("menordeedad");--}}
+{{--        var menor= ({{$formulario->check}});--}}
+{{--        // check = document.getElementById("check");--}}
+{{--        if (menor =='soy menor de edad') {--}}
+
+{{--            element.style.display = 'block';--}}
+{{--        } else {--}}
+{{--            element.style.display = 'none';--}}
+{{--        }--}}
+{{--    }--}}
+
+{{--</script>--}}

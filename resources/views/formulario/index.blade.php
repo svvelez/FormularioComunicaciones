@@ -341,7 +341,7 @@
                                     {{--CHECK TERCERO AUTORIZADO--}}
                                     <div class="col-lg-4">
                                         <div class="col ">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="terceroautorizado" id="terceroautorizado" onclick="javascript:showConte()">
+                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="terceroautorizado" id="terceroautorizado" value="si" onclick="javascript:showConte()">
 
                                             <label class="form-check-label" for="terceroautorizado">Tercero autorizado</label> <label style="color: red;text-align: left;"></label>
                                         </div>
@@ -497,7 +497,7 @@
                                         <P></P>
                                         <div class="col-lg-6">
                                             <div class="col form-check">
-                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="leido" id="si" value="He leído, y entiendo siendo debidamente informado (a), autorizo y
+                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="leidotercero" id="si" value="He leído, y entiendo siendo debidamente informado (a), autorizo y
                                                 acepto.">
                                                 <label class="form-check-label" for="anonimo">
                                                     He leído, y entiendo siendo debidamente informado (a), autorizo y
