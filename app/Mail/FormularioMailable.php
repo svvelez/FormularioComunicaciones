@@ -22,15 +22,11 @@ class FormularioMailable extends Mailable
         $this->formulario =$request;
     }
 
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
+
     public function build()
     {
         return $this->view('emails.mail')
-        ->from("soporteweb@dime.com.co")
-        ->subject("AUTORIZACIÓN/ACTUALIZACIÓN DATOS PERSONALES -WEB DIME");
+                ->from("soporteweb@dime.com.co");
+//                ->subject("hola");
     }
 }

@@ -32,14 +32,19 @@ class FormularioComunicacionController extends Controller
     public function store(Request $request)
     {
 
-/*  dd($request->autorizacion); */
-
-
         $destino_nombre=$request->nombre;
         $destino_email="practicantedevtic1@dime.com.co";
         $destino_email2="andres-felipe2000@live.com";
         $destino_email3="rios010503@gmail.com";
+
+        if ($request->datossensibles == "si"){
+            $asunto="DATOS SENSIBLES/AUTORIZACIÓN/ACTUALIZACIÓN DATOS PERSONALES - WEB DIME";
+        }elseif ($request->datossensibles == "no"){
+            $asunto="AUTORIZACIÓN/ACTUALIZACIÓN DATOS PERSONALES - WEB DIME";
+        }
+
         $email = new \App\Mail\FormularioMailable($request);
+        $email->subject($asunto);
         Mail::to($destino_email)->send($email);
 //        Mail::to($destino_email2)->send($email);
 //        Mail::to($destino_email3)->send($email);
