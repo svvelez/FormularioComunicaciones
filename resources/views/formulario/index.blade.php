@@ -209,7 +209,7 @@
                                         <div class="col">
                                             <label style="text-align: left;">Fecha de autorización</label><label style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="date" name="fecha" id="fecha" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px  #729271;" required>
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px  #729271;">
 
                                         </div>
                                     </div>
@@ -219,7 +219,7 @@
                                             <label style="text-align: left;">Nombre Completo</label><label style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="actualizacionnombre" id="actualizacionnombre" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                   placeholder="" required>
+                                                   placeholder="" >
                                         </div>
                                     </div>
 
@@ -803,6 +803,10 @@
                                   $("input[name='datossensibles']:checked").each(function () {
                                       datossensibles.push($(this).val()); });
 
+
+
+                                  fecha= $("#fecha").val();
+                                  nombre= $("#actualizacionnombre").val();
                                   numerodocumento= $("#actualizacionnumerodocumento").val();
                                   celular=$("#actualizacioncelular").val();
                                   ciudad=$("#actualizacionciudad").val();
@@ -833,7 +837,19 @@
                                               });
                                           },
                                           error: function (json, xhr, status) {
-                                              if (tipdocumento.length === 0 ) {
+                                              if (fecha===''){
+                                                  Swal.fire(
+                                                      'Error',
+                                                      'Debe seleccionar una fecha',
+                                                      'error'
+                                                  );
+                                              }else if(nombre===''){
+                                                  Swal.fire(
+                                                      'Error',
+                                                      'Debe diligenciar un nombre',
+                                                      'error'
+                                                  );
+                                              }else if(tipdocumento.length === 0 ) {
                                                   console.log(tipdocumento);
                                                   Swal.fire(
                                                       'Error',
