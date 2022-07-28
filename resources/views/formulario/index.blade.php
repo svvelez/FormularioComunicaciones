@@ -145,7 +145,7 @@
                                 <div class="row g-3">
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacion" id="si" value="si">
+                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacion" id="autorizacion" value="si">
                                             <label class="form-check-label" for="si">
                                                 Si
                                             </label>
@@ -154,7 +154,7 @@
 
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="autorizacion" id="no" value="no">
+                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="autorizacion" id="autorizacion" value="no">
                                             <label class="form-check-label" for="no">
                                                 No
                                             </label>
@@ -176,7 +176,7 @@
                                 <div class="row g-3">
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacionmensajes" id="si" value="si">
+                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacionmensajes" id="autorizacionmensajes" value="si">
                                             <label class="form-check-label" for="si">
                                                 Si
                                             </label>
@@ -185,7 +185,7 @@
 
                                     <div class="col-lg-1">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacionmensajes" id="no" value="no">
+                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacionmensajes" id="autorizacionmensajes" value="no">
                                             <label class="form-check-label" for="no">
                                                 No
                                             </label>
@@ -209,7 +209,8 @@
                                         <div class="col">
                                             <label style="text-align: left;">Fecha de autorización</label><label style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="date" name="fecha" id="fecha" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px  #729271;">
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px  #729271;" required>
+
                                         </div>
                                     </div>
 
@@ -218,7 +219,7 @@
                                             <label style="text-align: left;">Nombre Completo</label><label style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="actualizacionnombre" id="actualizacionnombre" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                   placeholder="">
+                                                   placeholder="" required>
                                         </div>
                                     </div>
 
@@ -238,10 +239,11 @@
                                         <div class="col">
                                             <label style="text-align: left;">Tipo de documento</label><label style="color: red;text-align: left;">*</label>
 
-                                            <div class="row g-3">
+                                            <div class="row g-3" >
+
                                                 <div class="col-lg-1">
-                                                    <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="CC" value="CC">
+                                                    <div class="col form-check" >
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="CC" value="CC" >
                                                         <label class="form-check-label" for="CC"> CC </label>
                                                     </div>
                                                 </div>
@@ -250,7 +252,7 @@
 
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="NI" value="NI">
+                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="NI" value="NI" >
                                                         <label class="form-check-label" for="NI"> NI</label>
                                                     </div>
                                                 </div>
@@ -742,7 +744,7 @@
 
                                 <p>
                                 <div>
-                                    <button type="submit" class="btn btn-success" style="background-color:  #008200;width:100px;height:35px;">
+                                    <button type="submit" name="enviar" id="enviar" class="btn btn-success" style="background-color:  #008200;width:100px;height:35px;">
                                        <b> Enviar</b>
                                     </button>
                                 </div>
@@ -788,36 +790,88 @@
 
                       {{-- envio de formulario--}}
                         <script>
-                            $(document).ready(function () {
-                                $.ajaxSetup({
-                                    headers: {
-                                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                                    }
-                                });
-                                $("#formulario").submit(function (e) {
-                                    e.preventDefault();
+                          $(document).ready(function () {
+                              tipdocumento = [];
+                              datossensibles=[];
 
-                                    var formulario = new FormData(this);
-                                    $.ajax({
-                                        type: 'POST',
-                                        url: "{{url('formulario')}}",
-                                        data: formulario,
-                                        cache: false,
-                                        contentType: false,
-                                        processData: false,
-                                        success: function (data) {
-                                            console.log(data);
-                                            swal.fire(" Enviados ", " Formulario Enviado Sastifactoriamente ", "success").then(() => {
-                                                window.location.href = "{{ route('formulario.index') }}"
-                                            });
-                                        },
-                                        error: function (json, xhr, status) {
-                                            swal.fire(" ¡no enviado! ",
-                                                "Complete toda la informacion requerida", "error");
-                                        }
-                                    });
-                                });
+                              $("#enviar").click(function () {
 
+                                  $("input[name='actualizaciontipodedocumento']:checked").each(function () {
+                                      tipdocumento.push($(this).val());
+                                   });
+
+                                  $("input[name='datossensibles']:checked").each(function () {
+                                      datossensibles.push($(this).val()); });
+
+                                  numerodocumento= $("#actualizacionnumerodocumento").val();
+                                  celular=$("#actualizacioncelular").val();
+                                  ciudad=$("#actualizacionciudad").val();
+                                  direccion=$("#actualizaciondireccion").val();
+                                  correo=$("#actualizacioncorreo").val();
+
+                                  $.ajaxSetup({
+                                      headers: {
+                                          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                      }
+                                  });
+                                  $("#formulario").submit(function (e) {
+                                      e.preventDefault();
+
+
+                                      var formulario = new FormData(this);
+                                      $.ajax({
+                                          type: 'POST',
+                                          url: "{{url('formulario')}}",
+                                          data: formulario,
+                                          cache: false,
+                                          contentType: false,
+                                          processData: false,
+                                          success: function (data) {
+                                              console.log(data);
+                                              swal.fire(" Enviados ", " Formulario Enviado Sastifactoriamente ", "success").then(() => {
+                                                  window.location.href = "{{ route('formulario.index') }}"
+                                              });
+                                          },
+                                          error: function (json, xhr, status) {
+                                              if (tipdocumento.length === 0 ) {
+                                                  console.log(tipdocumento);
+                                                  Swal.fire(
+                                                      'Error',
+                                                      'Debe seleccionar un tipo de documento',
+                                                      'error'
+                                                  );
+                                              }else if (numerodocumento==='') {
+                                                console.log('jum');
+                                                  Swal.fire('Error',
+                                                      'Debe escribir su número de documento', 'error');
+                                              }else if (celular==='') {
+                                                  console.log('error cel');
+                                                  swal.fire('Error',
+                                                      'Debe escribir su número de celular','error');
+                                              }else if (ciudad==='') {
+                                                console.log('error ciudad')
+                                                  swal.fire(" Error ",
+                                                      "Debe escribir su ciudad", "error");
+                                              }else if (direccion==='') {
+                                                 console.log('error direccion');
+                                                  swal.fire(" Error ",
+                                                      "Debe escribir su direccion", "error");
+                                              }else if (correo==='') {
+                                                  console.log('error direccion');
+                                                  swal.fire(" Error ",
+                                                      "Debe escribir su correo electronico", "error");
+                                              }else if (datossensibles.length === 0 ) {
+                                                  console.log(datossensibles);
+                                                  Swal.fire(
+                                                      'Error',
+                                                      'Debe seleccionar si en el formulario hay datos sensibles',
+                                                      'error'
+                                                  );
+                                              }
+                                          }
+                                      });
+                                  });
+                              });
                             });
 
 
