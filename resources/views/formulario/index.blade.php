@@ -842,7 +842,7 @@
 
                         <p>
                         <div>
-                            <button type="submit" name="enviar" id="enviar" class="btn btn-success"
+                            <button type="submit" name="enviar" id="enviar" class="btn btn-success"  onclick="document.getElementById('enviar').disabled=this.click"
                                     style="background-color:  #008200;width:100px;height:35px;">
                                 <b> Enviar</b>
                             </button>
@@ -897,6 +897,8 @@
             leido=[];
 
             $("#enviar").click(function () {
+
+
 
                 $("input[name='actualizaciontipodedocumento']:checked").each(function () {
                     tipdocumento.push($(this).val());
