@@ -17,7 +17,8 @@
                             <!-- Box Header -->
                             <P>
                             <div class="box-header with-border">
-                                <h3 style="color:  #008200; text-align: left;"><b>AUTORIZACIÓN DE TRATAMIENTO DE DATOS PERSONALES</b></h3>
+                                <h3 style="color:  #008200; text-align: left;"><b>AUTORIZACIÓN DE TRATAMIENTO DE DATOS
+                                        PERSONALES</b></h3>
                             </div>
 
                             <P>
@@ -118,132 +119,340 @@
                                             los Datos Personales o revocar la autorización aquí otorgada, en los
                                             términos y bajo el procedimiento consagrado en la Política. Igualmente, que
                                             soy consciente de los alcances jurídicos de esta autorización.
-                                    </p></ul>
+                                        </p></ul>
                                     <ul><p><b>Duración.</b> La Compañía podrá realizar el Tratamiento de mis Datos
                                             Personales por todo el tiempo que sea necesario para cumplir con las
                                             finalidades descritas en este documento y para que pueda desarrollar y tener
                                             registro de sus actividades asistenciales, comerciales y administrativas.
-                                    </p></ul>
+                                        </p></ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                            <p>
+                    <p>
 
-                            <div>
-                                <p>
-                                    Autorizo a DIME CLÍNICA de manera expresa, concreta, suficiente, voluntaria e
-                                    informada con la finalidad que la información de la cual soy titular, o he otorgado
-                                    con el fin de cumplir con la información requerida, para dar cumplimiento con las
-                                    políticas institucionales y las demás que se refieran a la información personal
-                                    necesaria para los fines mencionados en la presente autorización, sea en general
-                                    administrada y en especial: captada, tratada, procesada, operada, verificada, y
-                                    usada
-                                </p>
+                    <div>
+                        <p>
+                            Autorizo a DIME CLÍNICA de manera expresa, concreta, suficiente, voluntaria e
+                            informada con la finalidad que la información de la cual soy titular, o he otorgado
+                            con el fin de cumplir con la información requerida, para dar cumplimiento con las
+                            políticas institucionales y las demás que se refieran a la información personal
+                            necesaria para los fines mencionados en la presente autorización, sea en general
+                            administrada y en especial: captada, tratada, procesada, operada, verificada, y
+                            usada
+                        </p>
 
 
-                                <div class="row g-3">
-                                    <div class="col-lg-1">
-                                        <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacion" id="autorizacion" value="si">
-                                            <label class="form-check-label" for="si">
-                                                Si
-                                            </label>
+                        <div class="row g-3">
+                            <div class="col-lg-1">
+                                <div class="col form-check">
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                           name="autorizacion" id="autorizacion" value="si">
+                                    <label class="form-check-label" for="si">
+                                        Si
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1">
+                                <div class="col form-check">
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                           name="autorizacion" id="autorizacion" value="no">
+                                    <label class="form-check-label" for="no">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <p>
+                    <p>
+
+                    <div>
+                        <p>De igual forma autorizo voluntariamente a DIME CLINICA para que envíe mensajes con el
+                            fin de Informar acerca de los servicios de salud de la Clínica, campañas de
+                            prevención, promoción y en general remitir pautas publicitarias.
+                        </p>
+
+                        <div class="row g-3">
+                            <div class="col-lg-1">
+                                <div class="col form-check">
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                           name="autorizacionmensajes" id="autorizacionmensajes" value="si">
+                                    <label class="form-check-label" for="si">
+                                        Si
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1">
+                                <div class="col form-check">
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                           name="autorizacionmensajes" id="autorizacionmensajes" value="no">
+                                    <label class="form-check-label" for="no">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br>
+                    {{--formulario actualizacion de datos personales--}}
+
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
+                        <div class="header">
+                            <h3 style="color: #008200"><b>ACTUALIZACIÓN DE DATOS PERSONALES</b></h3>
+                            <hr style="color:  #008200;">
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Fecha de autorización</label><label
+                                        style="color: red;text-align: left;">*</label>
+                                    <input class="form-control" type="date" name="fecha" id="fecha" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px  #729271;">
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Nombre Completo</label><label
+                                        style="color: red;text-align: left;">*</label>
+                                    <input class="form-control" type="text" name="actualizacionnombre"
+                                           id="actualizacionnombre" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                           placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Teléfono</label>
+                                    <input class="form-control" type="text" name="actualizaciontelefono"
+                                           id="actualizaciontelefono" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                           placeholder="">
+                                </div>
+                            </div>
+
+                            {{-- segunda fila de actualizacion de datos personales--}}
+
+                            {{--checks de tipo de documento--}}
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Tipo de documento</label><label
+                                        style="color: red;text-align: left;">*</label>
+
+                                    <div class="row g-3">
+
+                                        <div class="col-lg-1">
+                                            <div class="col form-check">
+                                                <input style="border : solid 1px #729271;" class="form-check-input"
+                                                       type="checkbox" name="actualizaciontipodedocumento" id="CC"
+                                                       value="CC">
+                                                <label class="form-check-label" for="CC"> CC </label>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-lg-1">
-                                        <div class="col form-check">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="autorizacion" id="autorizacion" value="no">
-                                            <label class="form-check-label" for="no">
-                                                No
-                                            </label>
+                                        <br>
+
+                                        <div class="col-lg-1">
+                                            <div class="col form-check">
+                                                <input style="border : solid 1px #729271;" class="form-check-input"
+                                                       type="checkbox" name="actualizaciontipodedocumento" id="NI"
+                                                       value="NI">
+                                                <label class="form-check-label" for="NI"> NI</label>
+                                            </div>
                                         </div>
+
+                                        <br>
+
+                                        <div class="col-lg-1">
+                                            <div class="col form-check">
+                                                <input style="border : solid 1px #729271;" class="form-check-input"
+                                                       type="checkbox" name="actualizaciontipodedocumento" id="TI"
+                                                       value="TI">
+                                                <label class="form-check-label" for="TI">TI </label>
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        <div class="col-lg-1">
+                                            <div class="col form-check">
+                                                <input style="border : solid 1px #729271;" class="form-check-input"
+                                                       type="checkbox" name="actualizaciontipodedocumento" id="CE"
+                                                       value="CE">
+                                                <label class="form-check-label" for="CE"> CE </label>
+                                            </div>
+                                        </div>
+
                                     </div>
 
                                 </div>
                             </div>
 
-                            <p>
-                            <p>
-
-                            <div>
-                                <p>De igual forma autorizo voluntariamente a DIME CLINICA para que envíe mensajes con el
-                                    fin de Informar acerca de los servicios de salud de la Clínica, campañas de
-                                    prevención, promoción y en general remitir pautas publicitarias.
-                                </p>
-
-                                <div class="row g-3">
-                                    <div class="col-lg-1">
-                                        <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacionmensajes" id="autorizacionmensajes" value="si">
-                                            <label class="form-check-label" for="si">
-                                                Si
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-1">
-                                        <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="autorizacionmensajes" id="autorizacionmensajes" value="no">
-                                            <label class="form-check-label" for="no">
-                                                No
-                                            </label>
-                                        </div>
-                                    </div>
-
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Numero del documento</label><label
+                                        style="color: red;text-align: left;">*</label>
+                                    <input class="form-control" type="text" name="actualizacionnumerodocumento"
+                                           id="actualizacionnumerodocumento" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                           placeholder="">
                                 </div>
                             </div>
 
-                            <br>
-                            {{--formulario actualizacion de datos personales--}}
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Celular</label><label
+                                        style="color: red;text-align: left;">*</label>
+                                    <input class="form-control" type="text" name="actualizacioncelular"
+                                           id="actualizacioncelular" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                           placeholder="">
+                                </div>
+                            </div>
 
-                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
+                            {{-- tercera fila de actualización de datos personales --}}
+
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Ciudad</label><label
+                                        style="color: red;text-align: left;">*</label>
+                                    <input class="form-control" type="text" name="actualizacionciudad"
+                                           id="actualizacionciudad" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                           placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Dirección de correspondencia</label><label
+                                        style="color: red;text-align: left;">*</label>
+                                    <input class="form-control" type="text" name="actualizaciondireccion"
+                                           id="actualizaciondireccion" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                           placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Celular</label>
+                                    <input class="form-control" type="text" name="actualizacioncelular2"
+                                           id="actualizacioncelular2" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                           placeholder="">
+                                </div>
+                            </div>
+
+                            {{-- cuarta fila de actualización de datos personales --}}
+
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <label style="text-align: left;">Correo Electrónico</label>
+                                    <input class="form-control" type="text" name="actualizacioncorreo"
+                                           id="actualizacioncorreo" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                           placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="col">
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                           name="propio" id="propio" value="propio">
+                                    <label class="form-check-label" for="propio">Propio </label>
+                                </div>
+                            </div>
+
+
+                            {{--CHECK TERCERO AUTORIZADO--}}
+                            <div class="col-lg-4">
+                                <div class="col ">
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                           name="terceroautorizado" id="terceroautorizado" value="si"
+                                           onclick="javascript:showConte()">
+
+                                    <label class="form-check-label" for="terceroautorizado">Tercero autorizado</label>
+                                    <label style="color: red;text-align: left;"></label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="col form-check">
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                           name="leido" id="si" value="He leído, y entiendo siendo debidamente informado (a), autorizo y
+                                                acepto.">
+                                    <label class="form-check-label" for="anonimo">
+                                        He leído, y entiendo siendo debidamente informado (a), autorizo y
+                                        acepto.
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            {{--FORMULARIO TERCERO AUTORIZADO--}}
+                            <div id="contenttercero" style="display: none;">
                                 <div class="header">
-                                    <h3 style="color: #008200"><b>ACTUALIZACIÓN DE DATOS PERSONALES</b></h3>
+                                    <h3 style="color: #008200"><b> DATOS TERCERO AUTORIZADO</b></h3>
                                     <hr style="color:  #008200;">
                                 </div>
 
                                 <div class="row g-3">
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <label style="text-align: left;">Fecha de autorización</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="date" name="fecha" id="fecha" style="cursor: pointer;
+                                            <label style="text-align: left;">Fecha de autorización</label><label
+                                                style="color: red;text-align: left;">*</label>
+                                            <input class="form-control" type="date" name="fechatercero"
+                                                   id="fechatercero" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px  #729271;">
-
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <label style="text-align: left;">Nombre Completo</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="actualizacionnombre" id="actualizacionnombre" style="cursor: pointer;
+                                            <label style="text-align: left;">Nombre Completo</label><label
+                                                style="color: red;text-align: left;">*</label>
+                                            <input class="form-control" type="text" name="nombretercero"
+                                                   id="nombretercero" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                   placeholder="" >
+                                                   placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Teléfono</label>
-                                            <input class="form-control" type="text" name="actualizaciontelefono" id="actualizaciontelefono" style="cursor: pointer;
+                                            <input class="form-control" type="text" name="telefonotercero"
+                                                   id="telefonotercero" style="cursor: pointer;
                                             width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                    placeholder="">
                                         </div>
                                     </div>
 
-                                    {{-- segunda fila de actualizacion de datos personales--}}
+                                    {{-- SEGUNDA FILA FORMULARIO TERCERO AUTORIZADO--}}
 
                                     {{--checks de tipo de documento--}}
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <label style="text-align: left;">Tipo de documento</label><label style="color: red;text-align: left;">*</label>
+                                            <label style="text-align: left;">Tipo de documento</label><label
+                                                style="color: red;text-align: left;">*</label>
 
-                                            <div class="row g-3" >
-
+                                            <div class="row g-3">
                                                 <div class="col-lg-1">
-                                                    <div class="col form-check" >
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="CC" value="CC" >
+                                                    <div class="col form-check">
+                                                        <input style="border : solid 1px #729271;"
+                                                               class="form-check-input" type="checkbox"
+                                                               name="tipodedocumentotercero" id="CC" value="CC">
                                                         <label class="form-check-label" for="CC"> CC </label>
                                                     </div>
                                                 </div>
@@ -252,7 +461,9 @@
 
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="NI" value="NI" >
+                                                        <input style="border : solid 1px #729271;"
+                                                               class="form-check-input" type="checkbox"
+                                                               name="tipodedocumentotercero" id="NI" value="NI">
                                                         <label class="form-check-label" for="NI"> NI</label>
                                                     </div>
                                                 </div>
@@ -261,7 +472,9 @@
 
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="TI" value="TI">
+                                                        <input style="border : solid 1px #729271;"
+                                                               class="form-check-input" type="checkbox"
+                                                               name="tipodedocumentotercero" id="TI" value="TI">
                                                         <label class="form-check-label" for="TI">TI </label>
                                                     </div>
                                                 </div>
@@ -270,7 +483,9 @@
 
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
-                                                        <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="actualizaciontipodedocumento" id="CE" value="CE">
+                                                        <input style="border : solid 1px #729271;"
+                                                               class="form-check-input" type="checkbox"
+                                                               name="tipodedocumentotercero" id="CE" value="CE">
                                                         <label class="form-check-label" for="CE"> CE </label>
                                                     </div>
                                                 </div>
@@ -282,479 +497,363 @@
 
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <label style="text-align: left;">Numero del documento</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="actualizacionnumerodocumento" id="actualizacionnumerodocumento" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
+                                            <label style="text-align: left;">Numero del documento</label><label
+                                                style="color: red;text-align: left;">*</label>
+                                            <input class="form-control" type="text" name="numerodocumentotercero"
+                                                   id="numerodocumentotercero" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <label style="text-align: left;">Celular</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="actualizacioncelular" id="actualizacioncelular" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
+                                            <label style="text-align: left;">Celular</label><label
+                                                style="color: red;text-align: left;">*</label>
+                                            <input class="form-control" type="text" name="celulartercero"
+                                                   id="celulartercero" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
                                         </div>
                                     </div>
 
-                                    {{-- tercera fila de actualización de datos personales --}}
+                                    {{-- TERCER FILA DE FORMULARIO TERCERO AUTORIZADO --}}
 
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <label style="text-align: left;">Ciudad</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="actualizacionciudad" id="actualizacionciudad" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
+                                            <label style="text-align: left;">Ciudad</label><label
+                                                style="color: red;text-align: left;">*</label>
+                                            <input class="form-control" type="text" name="ciudadtercero"
+                                                   id="ciudadtercero" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <label style="text-align: left;">Dirección de correspondencia</label><label style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="actualizaciondireccion" id="actualizaciondireccion" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
+                                            <label style="text-align: left;">Dirección de correspondencia</label><label
+                                                style="color: red;text-align: left;">*</label>
+                                            <input class="form-control" type="text" name="direcciontercero"
+                                                   id="direcciontercero" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Celular</label>
-                                            <input class="form-control" type="text" name="actualizacioncelular2" id="actualizacioncelular2" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
+                                            <input class="form-control" type="text" name="celular2tercero"
+                                                   id="celular2tercero" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
                                         </div>
                                     </div>
 
-                                    {{-- cuarta fila de actualización de datos personales --}}
+                                    {{-- CUARTA FILA FORMULARIO DE TERCERO AUTORIZADO --}}
 
                                     <div class="col-lg-4">
                                         <div class="col">
                                             <label style="text-align: left;">Correo Electrónico</label>
-                                            <input class="form-control" type="text" name="actualizacioncorreo" id="actualizacioncorreo" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
+                                            <input class="form-control" type="text" name="correotercero"
+                                                   id="correotercero" style="cursor: pointer;
+                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
                                         </div>
                                     </div>
 
+
+                                </div>
+                                <P></P>
+                                <div class="col-lg-6">
+                                    <div class="col form-check">
+                                        <input style="border : solid 1px #729271;" class="form-check-input"
+                                               type="checkbox" name="leidotercero" id="si" value="He leído, y entiendo siendo debidamente informado (a), autorizo y
+                                                acepto.">
+                                        <label class="form-check-label" for="anonimo">
+                                            He leído, y entiendo siendo debidamente informado (a), autorizo y
+                                            acepto.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {{-- MENOR DE EDAD --}}
+                        <p>
+
+
+                        <p></p>
+
+                        <div class="row g-3">
+                            <div class="col-lg-8">
+                                <div class="col form-check">
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                           name="check" value="soy menor de edad"
+                                           id="check" onclick="javascript:showContent()">
+                                    <label class="label" for="anonimo">
+                                        En caso del que el usuario sea menor de edad o lo requiera, debe
+                                        autorizar un adulto responsable
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            {{--SI ES MENOR DE EDAD, SALE ESTE FORMULARIO PARA LLENAR LOS DATOS REQUERIDOS--}}
+
+                            <div id="content" style="display: none;">
+                                <div class="header">
+                                    <h3 style="color: #008200"><b>DATOS ADULTO RESPONSABLE</b></h3>
+                                    <hr style="color:  #008200;">
+                                </div>
+                                <div class="row g-3">
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="propio" id="propio" value="propio">
-                                            <label class="form-check-label" for="propio">Propio </label>
+                                            <label style="text-align: left;">Fecha de autorización</label>
+                                            <input class="form-control" type="date" name="fechaacudiente"
+                                                   id="fechaacudiente" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;">
                                         </div>
                                     </div>
 
-
-                                    {{--CHECK TERCERO AUTORIZADO--}}
                                     <div class="col-lg-4">
                                         <div class="col ">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="terceroautorizado" id="terceroautorizado" value="si" onclick="javascript:showConte()">
-
-                                            <label class="form-check-label" for="terceroautorizado">Tercero autorizado</label> <label style="color: red;text-align: left;"></label>
+                                            <label style="text-align: left;">Nombre completo del acudiente</label>
+                                            <input class="form-control" type="text" name="nombreacudiente"
+                                                   id="nombreacudiente" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
                                         </div>
                                     </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="col ">
+                                            <label style="text-align: left;">Teléfono</label>
+                                            <input class="form-control" type="text" name="telefonoacudiente"
+                                                   id="telefonoacudiente" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
+                                        </div>
+                                    </div>
+
+                                    {{--segunda fila de formulario acudiente --}}
+
+                                    <div class="col-lg-4">
+                                        <div class="col ">
+                                            <label style="text-align: left;">Tipo de documento</label>
+
+                                            <div class="row g-3">
+                                                <div class="col-lg-1">
+                                                    <div class="col form-check">
+                                                        <input style="border : solid 1px #729271;"
+                                                               class="form-check-input" type="checkbox"
+                                                               name="tipodedocumentoacudiente"
+                                                               id="tipodedocumentoacudiente" value="CC">
+                                                        <label class="form-check-label" for="ccacudiente">CC</label>
+                                                    </div>
+                                                </div>
+
+                                                <br>
+
+                                                <div class="col-lg-1">
+                                                    <div class="col form-check">
+                                                        <input style="border : solid 1px #729271;"
+                                                               class="form-check-input" type="checkbox"
+                                                               name="tipodedocumentoacudiente" id="niacudiente"
+                                                               value="NI">
+                                                        <label class="form-check-label" for="niacudiente">NI</label>
+                                                    </div>
+                                                </div>
+
+                                                <br>
+
+                                                <div class="col-lg-1">
+                                                    <div class="col form-check">
+                                                        <input style="border : solid 1px #729271;"
+                                                               class="form-check-input" type="checkbox"
+                                                               name="tipodedocumentoacudiente" id="tiacudiente"
+                                                               value="TI">
+                                                        <label class="form-check-label" for="tiacudiente">TI</label>
+                                                    </div>
+                                                </div>
+
+                                                <br>
+
+                                                <div class="col-lg-1">
+                                                    <div class="col form-check">
+                                                        <input style="border : solid 1px #729271;"
+                                                               class="form-check-input" type="checkbox"
+                                                               name="tipodedocumentoacudiente" id="ceacudiente"
+                                                               value="CE">
+                                                        <label class="form-check-label" for="ceacudiente">CE</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="col ">
+                                            <label style="text-align: left;">Número del documento</label>
+                                            <input class="form-control" type="text" name="numerodedocumentoacudiente"
+                                                   id="no" style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="col ">
+                                            <label style="text-align: left;">Celular</label>
+                                            <input class="form-control" type="text" name="celularacudiente" id="no"
+                                                   style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
+
+                                        </div>
+                                    </div>
+
+                                    {{-- ///////////// --}}
+
+                                    <div class="col-lg-4">
+                                        <div class="col ">
+                                            <label style="text-align: left;">Ciudad</label>
+                                            <input class="form-control" type="text" name="ciudadacudiente" id="si"
+                                                   style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="col ">
+                                            <label style="text-align: left;">Dirección de correspondencia</label>
+                                            <input class="form-control" type="text" name="direccionacudiente" id="no"
+                                                   style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="col ">
+                                            <label style="text-align: left;">Celular</label>
+                                            <input class="form-control" type="text" name="celularacudiente2" id="no"
+                                                   style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
+
+                                        </div>
+                                    </div>
+
+                                    {{-- ///////////// --}}
+
+                                    <div class="col-lg-4">
+                                        <div class="col ">
+                                            <label style="text-align: left;">Correo Electrónico</label>
+                                            <input class="form-control" type="text" name="correoacudiente" id="si"
+                                                   style="cursor: pointer;
+                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
+                                                   placeholder="">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="col form-check">
+                                            <input style="border : solid 1px #729271;" class="form-check-input"
+                                                   type="checkbox" name="propioac"
+                                                   id="propio">
+                                            <label class="form-check-label" for="propio">
+                                                Propio
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="col form-check">
+                                            <input style="border : solid 1px #729271;" class="form-check-input"
+                                                   type="checkbox"
+                                                   name="acudiente" id="acudiente">
+                                            <label class="form-check-label" for="terceroautorizado">
+                                                Acudiente
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                    {{-- ///////////// --}}
+
 
                                     <div class="col-lg-6">
                                         <div class="col form-check">
-                                            <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="leido" id="si" value="He leído, y entiendo siendo debidamente informado (a), autorizo y
-                                                acepto.">
-                                            <label class="form-check-label" for="anonimo">
-                                                He leído, y entiendo siendo debidamente informado (a), autorizo y
-                                                acepto.
-                                            </label>
-                                        </div>
-                                    </div>
-
-
-                                  {{--FORMULARIO TERCERO AUTORIZADO--}}
-                                    <div id="contenttercero" style="display: none;">
-                                        <div class="header">
-                                            <h3 style="color: #008200"><b> DATOS TERCERO AUTORIZADO</b></h3>
-                                            <hr style="color:  #008200;">
-                                        </div>
-
-                                        <div class="row g-3">
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Fecha de autorización</label><label style="color: red;text-align: left;">*</label>
-                                                    <input class="form-control" type="date" name="fechatercero" id="fechatercero" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px  #729271;">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Nombre Completo</label><label style="color: red;text-align: left;">*</label>
-                                                    <input class="form-control" type="text" name="nombretercero" id="nombretercero" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Teléfono</label>
-                                                    <input class="form-control" type="text" name="telefonotercero" id="telefonotercero" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-                                                </div>
-                                            </div>
-
-                                            {{-- SEGUNDA FILA FORMULARIO TERCERO AUTORIZADO--}}
-
-                                            {{--checks de tipo de documento--}}
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Tipo de documento</label><label style="color: red;text-align: left;">*</label>
-
-                                                    <div class="row g-3">
-                                                        <div class="col-lg-1">
-                                                            <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentotercero" id="CC" value="CC">
-                                                                <label class="form-check-label" for="CC"> CC </label>
-                                                            </div>
-                                                        </div>
-
-                                                        <br>
-
-                                                        <div class="col-lg-1">
-                                                            <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentotercero" id="NI" value="NI">
-                                                                <label class="form-check-label" for="NI"> NI</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <br>
-
-                                                        <div class="col-lg-1">
-                                                            <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentotercero" id="TI" value="TI">
-                                                                <label class="form-check-label" for="TI">TI </label>
-                                                            </div>
-                                                        </div>
-
-                                                        <br>
-
-                                                        <div class="col-lg-1">
-                                                            <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentotercero" id="CE" value="CE">
-                                                                <label class="form-check-label" for="CE"> CE </label>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Numero del documento</label><label style="color: red;text-align: left;">*</label>
-                                                    <input class="form-control" type="text" name="numerodocumentotercero" id="numerodocumentotercero" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Celular</label><label style="color: red;text-align: left;">*</label>
-                                                    <input class="form-control" type="text" name="celulartercero" id="celulartercero" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
-                                                </div>
-                                            </div>
-
-                                            {{-- TERCER FILA DE FORMULARIO TERCERO AUTORIZADO --}}
-
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Ciudad</label><label style="color: red;text-align: left;">*</label>
-                                                    <input class="form-control" type="text" name="ciudadtercero" id="ciudadtercero" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Dirección de correspondencia</label><label style="color: red;text-align: left;">*</label>
-                                                    <input class="form-control" type="text" name="direcciontercero" id="direcciontercero" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Celular</label>
-                                                    <input class="form-control" type="text" name="celular2tercero" id="celular2tercero" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
-                                                </div>
-                                            </div>
-
-                                            {{-- CUARTA FILA FORMULARIO DE TERCERO AUTORIZADO --}}
-
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Correo Electrónico</label>
-                                                    <input class="form-control" type="text" name="correotercero" id="correotercero" style="cursor: pointer;
-                                            width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
-                                                </div>
-                                            </div>
-
-
-                                    </div>
-                                        <P></P>
-                                        <div class="col-lg-6">
-                                            <div class="col form-check">
-                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="leidotercero" id="si" value="He leído, y entiendo siendo debidamente informado (a), autorizo y
-                                                acepto.">
-                                                <label class="form-check-label" for="anonimo">
-                                                    He leído, y entiendo siendo debidamente informado (a), autorizo y
-                                                    acepto.
-                                                </label>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-
-
-                            {{-- MENOR DE EDAD --}}
-                            <p>
-
-
-                            <p></p>
-
-                            <div class="row g-3">
-                                    <div class="col-lg-8">
-                                        <div class="col form-check">
-                                            <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="check" value="soy menor de edad"
-                                                   id="check" onclick="javascript:showContent()">
-                                            <label class="label" for="anonimo" >
-                                                En caso del que el usuario sea menor de edad o lo requiera, debe
-                                                autorizar un adulto responsable
-                                            </label>
-                                        </div>
-                                    </div>
-
-
-
-                                    {{--SI ES MENOR DE EDAD, SALE ESTE FORMULARIO PARA LLENAR LOS DATOS REQUERIDOS--}}
-
-                                    <div id="content" style="display: none;">
-                                        <div class="header">
-                                            <h3 style="color: #008200"><b>DATOS ADULTO RESPONSABLE</b></h3>
-                                            <hr style="color:  #008200;">
-                                        </div>
-                                        <div class="row g-3">
-                                            <div class="col-lg-4">
-                                                <div class="col">
-                                                    <label style="text-align: left;">Fecha de autorización</label>
-                                                    <input class="form-control" type="date" name="fechaacudiente" id="fechaacudiente" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="col ">
-                                                    <label style="text-align: left;">Nombre completo del acudiente</label>
-                                                    <input class="form-control" type="text" name="nombreacudiente" id="nombreacudiente" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="col ">
-                                                    <label style="text-align: left;">Teléfono</label>
-                                                    <input class="form-control" type="text" name="telefonoacudiente" id="telefonoacudiente" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;" placeholder="">
-                                                </div>
-                                            </div>
-
-                                            {{--segunda fila de formulario acudiente --}}
-
-                                            <div class="col-lg-4">
-                                                <div class="col ">
-                                                    <label style="text-align: left;">Tipo de documento</label>
-
-                                                    <div class="row g-3">
-                                                        <div class="col-lg-1">
-                                                            <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="tipodedocumentoacudiente" id="tipodedocumentoacudiente" value="CC">
-                                                                <label class="form-check-label" for="ccacudiente">CC</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <br>
-
-                                                        <div class="col-lg-1">
-                                                            <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentoacudiente" id="niacudiente" value="NI">
-                                                                <label class="form-check-label" for="niacudiente">NI</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <br>
-
-                                                        <div class="col-lg-1">
-                                                            <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentoacudiente" id="tiacudiente" value="TI">
-                                                                <label class="form-check-label" for="tiacudiente">TI</label>
-                                                            </div>
-                                                        </div>
-
-                                                       <br>
-
-                                                        <div class="col-lg-1">
-                                                            <div class="col form-check">
-                                                                <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox" name="tipodedocumentoacudiente" id="ceacudiente" value="CE">
-                                                                <label class="form-check-label" for="ceacudiente">CE</label>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="col ">
-                                                    <label style="text-align: left;">Número del documento</label>
-                                                    <input class="form-control" type="text" name="numerodedocumentoacudiente" id="no" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="col ">
-                                                    <label style="text-align: left;">Celular</label>
-                                                    <input class="form-control" type="text" name="celularacudiente" id="no" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-
-                                                </div>
-                                            </div>
-
-                                            {{-- ///////////// --}}
-
-                                            <div class="col-lg-4">
-                                                <div class="col ">
-                                                    <label style="text-align: left;">Ciudad</label>
-                                                    <input class="form-control" type="text" name="ciudadacudiente" id="si" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="col ">
-                                                    <label style="text-align: left;">Dirección de correspondencia</label>
-                                                    <input class="form-control" type="text" name="direccionacudiente" id="no" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="col ">
-                                                    <label style="text-align: left;">Celular</label>
-                                                    <input class="form-control" type="text" name="celularacudiente2" id="no" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-
-                                                </div>
-                                            </div>
-
-                                            {{-- ///////////// --}}
-
-                                            <div class="col-lg-4">
-                                                <div class="col ">
-                                                    <label style="text-align: left;">Correo Electrónico</label>
-                                                    <input class="form-control" type="text" name="correoacudiente" id="si" style="cursor: pointer;
-                                                    width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
-                                                           placeholder="">
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="propioac"
-                                                           id="propio">
-                                                    <label class="form-check-label" for="propio">
-                                                        Propio
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="col form-check">
-                                                    <input style="border : solid 1px #729271;"class="form-check-input" type="checkbox"
-                                                           name="acudiente" id="acudiente">
-                                                    <label class="form-check-label" for="terceroautorizado">
-                                                        Acudiente
-                                                    </label>
-                                                </div>
-                                            </div>
-
-
-                                            {{-- ///////////// --}}
-
-
-                                            <div class="col-lg-6">
-                                                <div class="col form-check">
-                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="leidoacudiente" id="leidoacudiente" value="He leído, y entiendo siendo debidamente informado (a), autorizo
+                                            <input style="border : solid 1px #729271;" class="form-check-input"
+                                                   type="checkbox" name="leidoacudiente" id="leidoacudiente" value="He leído, y entiendo siendo debidamente informado (a), autorizo
                                                         y acepto.">
-                                                    <label class="form-check-label" for="anonimo">
-                                                        He leído, y entiendo siendo debidamente informado (a), autorizo
-                                                        y acepto.
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                    <p>
-                                    <div>
-                                        <p>¿Considera usted que la información que ha suministrado clasifica como
-                                            información sensible?</p>
-                                    </div>
-
-                                    <div>
-                                        <p>Información sensible tipo de datos tales como: origen racial, étnico,
-                                            población en estado de vulnerabilidad o menores
-                                            de edad. Declaro que doy mi autorización para su tratamiento conforme a lo
-                                            dispuesto por la legislación vigente</p>
-
-                                        <div class="row g-3">
-                                            <div class="col-lg-1">
-                                                <div class="col form-check">
-                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="datossensibles" id="si" value="si">
-                                                    <label class="form-check-label" for="si">
-                                                        Si
-                                                    </label>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <div class="col form-check">
-                                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox" name="datossensibles" id="no" value="no">
-                                                    <label class="form-check-label" for="no">
-                                                        No
-                                                    </label>
-                                                </div>
-                                            </div>
+                                            <label class="form-check-label" for="anonimo">
+                                                He leído, y entiendo siendo debidamente informado (a), autorizo
+                                                y acepto.
+                                            </label>
                                         </div>
                                     </div>
+
                                 </div>
 
-                                <p>
-                                <div>
-                                    <button type="submit" name="enviar" id="enviar" class="btn btn-success" style="background-color:  #008200;width:100px;height:35px;">
-                                       <b> Enviar</b>
-                                    </button>
+                            </div>
+                            <p>
+                            <div>
+                                <p>¿Considera usted que la información que ha suministrado clasifica como
+                                    información sensible?</p>
+                            </div>
+
+                            <div>
+                                <p>Información sensible tipo de datos tales como: origen racial, étnico,
+                                    población en estado de vulnerabilidad o menores
+                                    de edad. Declaro que doy mi autorización para su tratamiento conforme a lo
+                                    dispuesto por la legislación vigente</p>
+
+                                <div class="row g-3">
+                                    <div class="col-lg-1">
+                                        <div class="col form-check">
+                                            <input style="border : solid 1px #729271;" class="form-check-input"
+                                                   type="checkbox" name="datossensibles" id="si" value="si">
+                                            <label class="form-check-label" for="si">
+                                                Si
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <div class="col form-check">
+                                            <input style="border : solid 1px #729271;" class="form-check-input"
+                                                   type="checkbox" name="datossensibles" id="no" value="no">
+                                            <label class="form-check-label" for="no">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <br>
+                        </div>
+
+                        <p>
+                        <div>
+                            <button type="submit" name="enviar" id="enviar" class="btn btn-success"
+                                    style="background-color:  #008200;width:100px;height:35px;">
+                                <b> Enviar</b>
+                            </button>
+                        </div>
+                    </div>
+                    <br>
 
             </form>
         </div>
     </div>
- </html>
+    </html>
 
                        {{--mostrar formulario para datos del acudiente si es menor de edad--}}
     <script type="text/javascript">
@@ -788,109 +887,145 @@
 
 
 
-                      {{-- envio de formulario--}}
-                        <script>
-                          $(document).ready(function () {
-                              tipdocumento = [];
-                              datossensibles=[];
+                      {{-- envio de formulario y validaciones--}}
+    <script>
+        $(document).ready(function () {
+            tipdocumento = [];
+            datossensibles = [];
+            autorizacion = [];
+            autorizacionmensajes = [];
+            leido=[];
 
-                              $("#enviar").click(function () {
+            $("#enviar").click(function () {
 
-                                  $("input[name='actualizaciontipodedocumento']:checked").each(function () {
-                                      tipdocumento.push($(this).val());
-                                   });
+                $("input[name='actualizaciontipodedocumento']:checked").each(function () {
+                    tipdocumento.push($(this).val());
+                });
 
-                                  $("input[name='datossensibles']:checked").each(function () {
-                                      datossensibles.push($(this).val()); });
+                $("input[name='datossensibles']:checked").each(function () {
+                    datossensibles.push($(this).val());
+                });
 
+                $("input[name='autorizacion']:checked").each(function () {
+                    autorizacion.push($(this).val());
+                });
 
+                $("input[name='autorizacionmensajes']:checked").each(function () {
+                    autorizacionmensajes.push($(this).val());
+                });
 
-                                  fecha= $("#fecha").val();
-                                  nombre= $("#actualizacionnombre").val();
-                                  numerodocumento= $("#actualizacionnumerodocumento").val();
-                                  celular=$("#actualizacioncelular").val();
-                                  ciudad=$("#actualizacionciudad").val();
-                                  direccion=$("#actualizaciondireccion").val();
-                                  correo=$("#actualizacioncorreo").val();
-
-                                  $.ajaxSetup({
-                                      headers: {
-                                          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                                      }
-                                  });
-                                  $("#formulario").submit(function (e) {
-                                      e.preventDefault();
+                $("input[name='leido']:checked").each(function () {
+                    leido.push($(this).val());
+                });
 
 
-                                      var formulario = new FormData(this);
-                                      $.ajax({
-                                          type: 'POST',
-                                          url: "{{url('formulario')}}",
-                                          data: formulario,
-                                          cache: false,
-                                          contentType: false,
-                                          processData: false,
-                                          success: function (data) {
-                                              console.log(data);
-                                              swal.fire(" Enviados ", " Formulario Enviado Sastifactoriamente ", "success").then(() => {
-                                                  window.location.href = "{{ route('formulario.index') }}"
-                                              });
-                                          },
-                                          error: function (json, xhr, status) {
-                                              if (fecha===''){
-                                                  Swal.fire(
-                                                      'Error',
-                                                      'Debe seleccionar una fecha',
-                                                      'error'
-                                                  );
-                                              }else if(nombre===''){
-                                                  Swal.fire(
-                                                      'Error',
-                                                      'Debe diligenciar un nombre',
-                                                      'error'
-                                                  );
-                                              }else if(tipdocumento.length === 0 ) {
-                                                  console.log(tipdocumento);
-                                                  Swal.fire(
-                                                      'Error',
-                                                      'Debe seleccionar un tipo de documento',
-                                                      'error'
-                                                  );
-                                              }else if (numerodocumento==='') {
-                                                console.log('jum');
-                                                  Swal.fire('Error',
-                                                      'Debe escribir su número de documento', 'error');
-                                              }else if (celular==='') {
-                                                  console.log('error cel');
-                                                  swal.fire('Error',
-                                                      'Debe escribir su número de celular','error');
-                                              }else if (ciudad==='') {
-                                                console.log('error ciudad')
-                                                  swal.fire(" Error ",
-                                                      "Debe escribir su ciudad", "error");
-                                              }else if (direccion==='') {
-                                                 console.log('error direccion');
-                                                  swal.fire(" Error ",
-                                                      "Debe escribir su direccion", "error");
-                                              }else if (correo==='') {
-                                                  console.log('error direccion');
-                                                  swal.fire(" Error ",
-                                                      "Debe escribir su correo electronico", "error");
-                                              }else if (datossensibles.length === 0 ) {
-                                                  console.log(datossensibles);
-                                                  Swal.fire(
-                                                      'Error',
-                                                      'Debe seleccionar si en el formulario hay datos sensibles',
-                                                      'error'
-                                                  );
-                                              }
-                                          }
-                                      });
-                                  });
-                              });
+                fecha = $("#fecha").val();
+                nombre = $("#actualizacionnombre").val();
+                numerodocumento = $("#actualizacionnumerodocumento").val();
+                celular = $("#actualizacioncelular").val();
+                ciudad = $("#actualizacionciudad").val();
+                direccion = $("#actualizaciondireccion").val();
+                correo = $("#actualizacioncorreo").val();
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $("#formulario").submit(function (e) {
+                    e.preventDefault();
+
+
+                    var formulario = new FormData(this);
+                    $.ajax({
+                        type: 'POST',
+                        url: "{{url('formulario')}}",
+                        data: formulario,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function (data) {
+                            console.log(data);
+                            swal.fire(" Enviados ", " Formulario Enviado Sastifactoriamente ", "success").then(() => {
+                                window.location.href = "{{ route('formulario.index') }}"
                             });
+                        },
+                        error: function (json, xhr, status) {
+                            if (autorizacion.length === 0) {
+                                console.log(autorizacion);
+                                Swal.fire(
+                                    'Error',
+                                    'Debe seleccionar si desea autorizar el tratamiento de datos persoanles',
+                                    'error'
+                                );
+                            } else if (autorizacionmensajes.length === 0) {
+                                console.log(autorizacionmensajes);
+                                Swal.fire(
+                                    'Error',
+                                    'Debe seleccionar si desea recibir mensajes',
+                                    'error'
+                                );
+                            } else if (fecha === '') {
+                                Swal.fire(
+                                    'Error',
+                                    'Debe seleccionar una fecha',
+                                    'error'
+                                );
+                            } else if (nombre === '') {
+                                Swal.fire(
+                                    'Error',
+                                    'Debe diligenciar un nombre',
+                                    'error'
+                                );
+                            } else if (tipdocumento.length === 0) {
+                                console.log(tipdocumento);
+                                Swal.fire(
+                                    'Error',
+                                    'Debe seleccionar un tipo de documento',
+                                    'error'
+                                );
+                            } else if (numerodocumento === '') {
+                                console.log('jum');
+                                Swal.fire('Error',
+                                    'Debe escribir su número de documento', 'error');
+                            } else if (celular === '') {
+                                console.log('error cel');
+                                swal.fire('Error',
+                                    'Debe escribir su número de celular', 'error');
+                            } else if (ciudad === '') {
+                                console.log('error ciudad')
+                                swal.fire(" Error ",
+                                    "Debe escribir su ciudad", "error");
+                            } else if (direccion === '') {
+                                console.log('error direccion');
+                                swal.fire(" Error ",
+                                    "Debe escribir su direccion", "error");
+                            } else if (correo === '') {
+                                console.log('error direccion');
+                                swal.fire(" Error ",
+                                    "Debe escribir su correo electronico", "error");
+                            } else if(leido.length===0){
+                                console.log(leido);
+                                Swal.fire(
+                                    'Error',
+                                    'Debe seleccionar si ha sido informado',
+                                    'error'
+                                );
+                                }else if (datossensibles.length === 0) {
+                                console.log(datossensibles);
+                                Swal.fire(
+                                    'Error',
+                                    'Debe seleccionar si en el formulario hay datos sensibles',
+                                    'error'
+                                );
+                            }
+                        }
+                    });
+                });
+            });
+        });
 
 
-                        </script>
+    </script>
 
 @endsection

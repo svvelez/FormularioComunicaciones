@@ -34,7 +34,8 @@ class FormularioComunicacionController extends Controller
     {
 
        $rules = [
-//           'autorizacion'=>'required',
+           'autorizacion'=>'required',
+           'autorizacionmensajes'=>'required',
            'fecha'=>'required',
            'actualizacionnombre'=>'required',
            'actualizaciontipodedocumento'=>'required',
