@@ -842,7 +842,7 @@
 
                         <p>
                         <div>
-                            <button type="submit" name="enviar" id="enviar" class="btn btn-success"  onclick="document.getElementById('enviar').disabled=this.click"
+                            <button type="submit" name="enviar" id="enviar" class="btn btn-success"
                                     style="background-color:  #008200;width:100px;height:35px;">
                                 <b> Enviar</b>
                             </button>
@@ -896,8 +896,8 @@
             autorizacionmensajes = [];
             leido=[];
 
-            $("#enviar").click(function () {
-
+            $("#formulario").submit(function (e) {
+                e.preventDefault();
 
 
                 $("input[name='actualizaciontipodedocumento']:checked").each(function () {
@@ -934,8 +934,7 @@
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     }
                 });
-                $("#formulario").submit(function (e) {
-                    e.preventDefault();
+
 
 
                     var formulario = new FormData(this);
@@ -1021,8 +1020,11 @@
                                     'error'
                                 );
                             }
+                        },
+                        complete:function (xhr,status) {
+                            $("#enviar").attr('disabled',false);
                         }
-                    });
+
                 });
             });
         });
