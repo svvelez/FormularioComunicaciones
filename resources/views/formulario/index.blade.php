@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Create')
+@section('title')
 
 @section('content')
 
@@ -144,9 +144,9 @@
 
 
                         <div class="row g-3">
-                            <div class="col-lg-1">
+                            <div class="col-lg-1 ">
                                 <div class="col form-check">
-                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="radio"
                                            name="autorizacion" id="autorizacion" value="si">
                                     <label class="form-check-label" for="si">
                                         Si
@@ -156,7 +156,7 @@
 
                             <div class="col-lg-1">
                                 <div class="col form-check">
-                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="radio"
                                            name="autorizacion" id="autorizacion" value="no">
                                     <label class="form-check-label" for="no">
                                         No
@@ -165,6 +165,7 @@
                             </div>
 
                         </div>
+
                     </div>
 
                     <p>
@@ -179,7 +180,7 @@
                         <div class="row g-3">
                             <div class="col-lg-1">
                                 <div class="col form-check">
-                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="radio"
                                            name="autorizacionmensajes" id="autorizacionmensajes" value="si">
                                     <label class="form-check-label" for="si">
                                         Si
@@ -189,7 +190,7 @@
 
                             <div class="col-lg-1">
                                 <div class="col form-check">
-                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="radio"
                                            name="autorizacionmensajes" id="autorizacionmensajes" value="no">
                                     <label class="form-check-label" for="no">
                                         No
@@ -254,7 +255,7 @@
                                         <div class="col-lg-1">
                                             <div class="col form-check">
                                                 <input style="border : solid 1px #729271;" class="form-check-input"
-                                                       type="checkbox" name="actualizaciontipodedocumento" id="CC"
+                                                       type="radio" name="actualizaciontipodedocumento" id="CC"
                                                        value="CC">
                                                 <label class="form-check-label" for="CC"> CC </label>
                                             </div>
@@ -265,7 +266,7 @@
                                         <div class="col-lg-1">
                                             <div class="col form-check">
                                                 <input style="border : solid 1px #729271;" class="form-check-input"
-                                                       type="checkbox" name="actualizaciontipodedocumento" id="NI"
+                                                       type="radio" name="actualizaciontipodedocumento" id="NI"
                                                        value="NI">
                                                 <label class="form-check-label" for="NI"> NI</label>
                                             </div>
@@ -276,7 +277,7 @@
                                         <div class="col-lg-1">
                                             <div class="col form-check">
                                                 <input style="border : solid 1px #729271;" class="form-check-input"
-                                                       type="checkbox" name="actualizaciontipodedocumento" id="TI"
+                                                       type="radio" name="actualizaciontipodedocumento" id="TI"
                                                        value="TI">
                                                 <label class="form-check-label" for="TI">TI </label>
                                             </div>
@@ -287,7 +288,7 @@
                                         <div class="col-lg-1">
                                             <div class="col form-check">
                                                 <input style="border : solid 1px #729271;" class="form-check-input"
-                                                       type="checkbox" name="actualizaciontipodedocumento" id="CE"
+                                                       type="radio" name="actualizaciontipodedocumento" id="CE"
                                                        value="CE">
                                                 <label class="form-check-label" for="CE"> CE </label>
                                             </div>
@@ -451,7 +452,7 @@
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
                                                         <input style="border : solid 1px #729271;"
-                                                               class="form-check-input" type="checkbox"
+                                                               class="form-check-input" type="radio"
                                                                name="tipodedocumentotercero" id="CC" value="CC">
                                                         <label class="form-check-label" for="CC"> CC </label>
                                                     </div>
@@ -462,7 +463,7 @@
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
                                                         <input style="border : solid 1px #729271;"
-                                                               class="form-check-input" type="checkbox"
+                                                               class="form-check-input" type="radio"
                                                                name="tipodedocumentotercero" id="NI" value="NI">
                                                         <label class="form-check-label" for="NI"> NI</label>
                                                     </div>
@@ -473,7 +474,7 @@
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
                                                         <input style="border : solid 1px #729271;"
-                                                               class="form-check-input" type="checkbox"
+                                                               class="form-check-input" type="radio"
                                                                name="tipodedocumentotercero" id="TI" value="TI">
                                                         <label class="form-check-label" for="TI">TI </label>
                                                     </div>
@@ -484,7 +485,7 @@
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
                                                         <input style="border : solid 1px #729271;"
-                                                               class="form-check-input" type="checkbox"
+                                                               class="form-check-input" type="radio"
                                                                name="tipodedocumentotercero" id="CE" value="CE">
                                                         <label class="form-check-label" for="CE"> CE </label>
                                                     </div>
@@ -611,7 +612,8 @@
                                 <div class="row g-3">
                                     <div class="col-lg-4">
                                         <div class="col">
-                                            <label style="text-align: left;">Fecha de autorización</label>
+                                            <label style="text-align: left;">Fecha de autorización</label><label
+                                                style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="date" name="fechaacudiente"
                                                    id="fechaacudiente" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;">
@@ -620,7 +622,8 @@
 
                                     <div class="col-lg-4">
                                         <div class="col ">
-                                            <label style="text-align: left;">Nombre completo del acudiente</label>
+                                            <label style="text-align: left;">Nombre completo del acudiente</label><label
+                                                style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="nombreacudiente"
                                                    id="nombreacudiente" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
@@ -642,13 +645,14 @@
 
                                     <div class="col-lg-4">
                                         <div class="col ">
-                                            <label style="text-align: left;">Tipo de documento</label>
+                                            <label style="text-align: left;">Tipo de documento</label><label
+                                                style="color: red;text-align: left;">*</label>
 
                                             <div class="row g-3">
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
                                                         <input style="border : solid 1px #729271;"
-                                                               class="form-check-input" type="checkbox"
+                                                               class="form-check-input" type="radio"
                                                                name="tipodedocumentoacudiente"
                                                                id="tipodedocumentoacudiente" value="CC">
                                                         <label class="form-check-label" for="ccacudiente">CC</label>
@@ -660,7 +664,7 @@
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
                                                         <input style="border : solid 1px #729271;"
-                                                               class="form-check-input" type="checkbox"
+                                                               class="form-check-input" type="radio"
                                                                name="tipodedocumentoacudiente" id="niacudiente"
                                                                value="NI">
                                                         <label class="form-check-label" for="niacudiente">NI</label>
@@ -672,7 +676,7 @@
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
                                                         <input style="border : solid 1px #729271;"
-                                                               class="form-check-input" type="checkbox"
+                                                               class="form-check-input" type="radio"
                                                                name="tipodedocumentoacudiente" id="tiacudiente"
                                                                value="TI">
                                                         <label class="form-check-label" for="tiacudiente">TI</label>
@@ -684,7 +688,7 @@
                                                 <div class="col-lg-1">
                                                     <div class="col form-check">
                                                         <input style="border : solid 1px #729271;"
-                                                               class="form-check-input" type="checkbox"
+                                                               class="form-check-input" type="radio"
                                                                name="tipodedocumentoacudiente" id="ceacudiente"
                                                                value="CE">
                                                         <label class="form-check-label" for="ceacudiente">CE</label>
@@ -698,7 +702,8 @@
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="col ">
-                                            <label style="text-align: left;">Número del documento</label>
+                                            <label style="text-align: left;">Número del documento</label><label
+                                                style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="numerodedocumentoacudiente"
                                                    id="no" style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
@@ -708,7 +713,8 @@
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="col ">
-                                            <label style="text-align: left;">Celular</label>
+                                            <label style="text-align: left;">Celular</label><label
+                                                style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="celularacudiente" id="no"
                                                    style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
@@ -721,7 +727,8 @@
 
                                     <div class="col-lg-4">
                                         <div class="col ">
-                                            <label style="text-align: left;">Ciudad</label>
+                                            <label style="text-align: left;">Ciudad</label><label
+                                                style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="ciudadacudiente" id="si"
                                                    style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
@@ -732,7 +739,8 @@
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="col ">
-                                            <label style="text-align: left;">Dirección de correspondencia</label>
+                                            <label style="text-align: left;">Dirección de correspondencia</label><label
+                                                style="color: red;text-align: left;">*</label>
                                             <input class="form-control" type="text" name="direccionacudiente" id="no"
                                                    style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
@@ -779,7 +787,7 @@
                                             <input style="border : solid 1px #729271;" class="form-check-input"
                                                    type="checkbox"
                                                    name="acudiente" id="acudiente">
-                                            <label class="form-check-label" for="terceroautorizado">
+                                            <label class="form-check-label" for="acudiente">
                                                 Acudiente
                                             </label>
                                         </div>
@@ -820,7 +828,7 @@
                                     <div class="col-lg-1">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;" class="form-check-input"
-                                                   type="checkbox" name="datossensibles" id="si" value="si">
+                                                   type="radio" name="datossensibles" id="si" value="si">
                                             <label class="form-check-label" for="si">
                                                 Si
                                             </label>
@@ -830,7 +838,7 @@
                                     <div class="col-lg-1">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;" class="form-check-input"
-                                                   type="checkbox" name="datossensibles" id="no" value="no">
+                                                   type="radio" name="datossensibles" id="no" value="no">
                                             <label class="form-check-label" for="no">
                                                 No
                                             </label>
@@ -855,13 +863,12 @@
     </div>
     </html>
 
-                       {{--mostrar formulario para datos del acudiente si es menor de edad--}}
+    {{--mostrar formulario para datos del acudiente si es menor de edad--}}
     <script type="text/javascript">
         function showContent() {
             element = document.getElementById("content");
             check = document.getElementById("check");
             if (check.checked) {
-
                 element.style.display = 'block';
             } else {
                 element.style.display = 'none';
@@ -874,31 +881,53 @@
         function showConte() {
             element = document.getElementById("contenttercero");
             check = document.getElementById("terceroautorizado");
-            if (check.checked) {
 
+
+            if (check.checked) {
                 element.style.display = 'block';
+
             } else {
                 element.style.display = 'none';
             }
         }
     </script>
+{{--    <script>--}}
+{{--        console.log(result)--}}
+{{--        if(result.success ==='true'){--}}
 
+{{--            Swal.fire(--}}
+{{--                'Bienvenido',--}}
+{{--                result.mensaje,--}}
+{{--                'success'--}}
+{{--            )--}}
+{{--            setTimeout(greet, 2000);--}}
 
-
-
+{{--        }else{--}}
+{{--            Swal.fire(--}}
+{{--                'Error al registrar',--}}
+{{--                result.mensaje,--}}
+{{--                'error'--}}
+{{--            )--}}
+{{--        }--}}
+{{--    </script>--}}
 
                       {{-- envio de formulario y validaciones--}}
     <script>
         $(document).ready(function () {
-            tipdocumento = [];
+
+          tipdocumento = [];
             datossensibles = [];
             autorizacion = [];
             autorizacionmensajes = [];
             leido=[];
+            tipodedocumentotercero=[];
+            leidotercero=[];
+            tipodedocumentoacudiente=[];
+            leidoacudiente=[];
+            terceroautorizado=[];
 
             $("#formulario").submit(function (e) {
                 e.preventDefault();
-
 
                 $("input[name='actualizaciontipodedocumento']:checked").each(function () {
                     tipdocumento.push($(this).val());
@@ -920,6 +949,25 @@
                     leido.push($(this).val());
                 });
 
+                $("input[name='tipodedocumentotercero']:checked").each(function () {
+                    tipodedocumentotercero.push($(this).val());
+                });
+
+                $("input[name='leidotercero']:checked").each(function () {
+                    leidotercero.push($(this).val());
+                });
+
+                $("input[name='tipodedocumentoacudiente']:checked").each(function () {
+                    tipodedocumentotercero.push($(this).val());
+                });
+
+                $("input[name='leidoacudiente']:checked").each(function () {
+                    leidotercero.push($(this).val());
+                });
+
+                $("input[name='terceroautorizado']:checked").each(function () {
+                    terceroautorizado.push($(this).val());
+                });
 
                 fecha = $("#fecha").val();
                 nombre = $("#actualizacionnombre").val();
@@ -927,7 +975,21 @@
                 celular = $("#actualizacioncelular").val();
                 ciudad = $("#actualizacionciudad").val();
                 direccion = $("#actualizaciondireccion").val();
-                correo = $("#actualizacioncorreo").val();
+                tercero=$("#terceroautorizado").val();
+                fechatercero=$("#fechatercero").val();
+                nombretercero=$("#nombretercero").val();
+                numerodocumentotercero=$("#numerodocumentotercero").val();
+                celulartercero=$("#celulartercero").val();
+                ciudadtercero=$("#ciudadtercero").val();
+                direcciontercero=$("#direcciontercero").val();
+                fechaacudiente=$("#fechaacudiente").val();
+                nombreacudiente=$("#nombreacudiente").val();
+                numerodocumentoacudiente=$("#numerodocumentoacudiente").val();
+                celularacudiente=$("#celularacudiente").val();
+                ciudadacudiente=$("#ciudadacudiente").val();
+                direccionacudiente=$("#direccionacudiente").val();
+                terceroautorizad=$("#terceroautorizado").val();
+
 
                 $.ajaxSetup({
                     headers: {
@@ -936,94 +998,113 @@
                 });
 
 
+                var formulario = new FormData(this);
+                $.ajax({
+                    type: 'POST',
+                    url: "{{url('formulario')}}",
+                    data: formulario,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (data) {
+                        console.log(data);
+                        swal.fire(" Enviados ", " Formulario Enviado Sastifactoriamente ", "success").then(() => {
+                            window.location.href = "{{ route('formulario.index') }}"
+                        });
+                    },
+                    error: function (json, xhr, status) {
+                        if (autorizacion.length === 0) {
+                            console.log(autorizacion);
+                            Swal.fire(
+                                'Error',
+                                'Debe seleccionar si desea autorizar el tratamiento de datos persoanles',
+                                'error'
+                            );
+                        } else if (autorizacionmensajes.length === 0) {
+                            console.log(autorizacionmensajes);
+                            Swal.fire(
+                                'Error',
+                                'Debe seleccionar si desea recibir mensajes',
+                                'error'
+                            );
+                        } else if (fecha === '') {
+                            Swal.fire(
+                                'Error',
+                                'Debe seleccionar una fecha',
+                                'error'
+                            );
+                        } else if (nombre === '') {
+                            Swal.fire(
+                                'Error',
+                                'Debe diligenciar un nombre',
+                                'error'
+                            );
+                        } else if (tipdocumento.length === 0) {
+                            console.log(tipdocumento);
+                            Swal.fire(
+                                'Error',
+                                'Debe seleccionar un tipo de documento',
+                                'error'
+                            );
+                        } else if (numerodocumento === '') {
+                            console.log('jum');
+                            Swal.fire('Error',
+                                'Debe escribir su número de documento', 'error');
+                        } else if (celular === '') {
+                            console.log('error cel');
+                            swal.fire('Error',
+                                'Debe escribir su número de celular', 'error');
+                        } else if (ciudad === '') {
+                            console.log('error ciudad')
+                            swal.fire(" Error ",
+                                "Debe escribir su ciudad", "error");
+                        } else if (direccion === '') {
+                            console.log('error direccion');
+                            swal.fire(" Error ",
+                                "Debe escribir su direccion", "error");
 
-                    var formulario = new FormData(this);
-                    $.ajax({
-                        type: 'POST',
-                        url: "{{url('formulario')}}",
-                        data: formulario,
-                        cache: false,
-                        contentType: false,
-                        processData: false,
-                        success: function (data) {
-                            console.log(data);
-                            swal.fire(" Enviados ", " Formulario Enviado Sastifactoriamente ", "success").then(() => {
-                                window.location.href = "{{ route('formulario.index') }}"
-                            });
-                        },
-                        error: function (json, xhr, status) {
-                            if (autorizacion.length === 0) {
-                                console.log(autorizacion);
-                                Swal.fire(
-                                    'Error',
-                                    'Debe seleccionar si desea autorizar el tratamiento de datos persoanles',
-                                    'error'
-                                );
-                            } else if (autorizacionmensajes.length === 0) {
-                                console.log(autorizacionmensajes);
-                                Swal.fire(
-                                    'Error',
-                                    'Debe seleccionar si desea recibir mensajes',
-                                    'error'
-                                );
-                            } else if (fecha === '') {
-                                Swal.fire(
-                                    'Error',
-                                    'Debe seleccionar una fecha',
-                                    'error'
-                                );
-                            } else if (nombre === '') {
-                                Swal.fire(
-                                    'Error',
-                                    'Debe diligenciar un nombre',
-                                    'error'
-                                );
-                            } else if (tipdocumento.length === 0) {
-                                console.log(tipdocumento);
-                                Swal.fire(
-                                    'Error',
-                                    'Debe seleccionar un tipo de documento',
-                                    'error'
-                                );
-                            } else if (numerodocumento === '') {
-                                console.log('jum');
-                                Swal.fire('Error',
-                                    'Debe escribir su número de documento', 'error');
-                            } else if (celular === '') {
-                                console.log('error cel');
-                                swal.fire('Error',
-                                    'Debe escribir su número de celular', 'error');
-                            } else if (ciudad === '') {
-                                console.log('error ciudad')
-                                swal.fire(" Error ",
-                                    "Debe escribir su ciudad", "error");
-                            } else if (direccion === '') {
-                                console.log('error direccion');
-                                swal.fire(" Error ",
-                                    "Debe escribir su direccion", "error");
-                            } else if (correo === '') {
-                                console.log('error direccion');
-                                swal.fire(" Error ",
-                                    "Debe escribir su correo electronico", "error");
-                            } else if(leido.length===0){
-                                console.log(leido);
-                                Swal.fire(
-                                    'Error',
-                                    'Debe seleccionar si ha sido informado',
-                                    'error'
-                                );
-                                }else if (datossensibles.length === 0) {
-                                console.log(datossensibles);
-                                Swal.fire(
-                                    'Error',
-                                    'Debe seleccionar si en el formulario hay datos sensibles',
-                                    'error'
-                                );
+                        } else if (leido.length === 0) {
+                            console.log(leido);
+                            Swal.fire(
+                                'Error',
+                                'Debe seleccionar si ha sido informado',
+                                'error'
+                            );
+
+                        } else if (terceroautorizad==='si') {
+                            alert('hola');
+
+                            if (fechatercero === '') {
+                                Swal.fire("Error", "Debe seleccionar una fechas de tercero", "error");
+                            } else if (nombretercero === '') {
+                                Swal.fire("Error", "Debe diligenciar el nombre", "error");
+                            } else if (tipodedocumentotercero.length === 0) {
+                                Swal.fire("Error", "Debe seleccionar el tipo de documento", "error");
+                            } else if (numerodocumentotercero === '') {
+                                Swal.fire("Error", "Debe Diligenciar el número de documento", "error");
+                            } else if (celulartercero === '') {
+                                Swal.fire("Error", "Debe Diligenciar el número de celular", "error");
+                            } else if (ciudadtercero === '') {
+                                Swal.fire("Error", "Debe Diligenciar la ciudad", "error");
+                            } else if (direcciontercero === '') {
+                                Swal.fire("Error", "Debe Diligenciar la dirección", "error");
+                            } else if (leidotercero.length === 0) {
+                                Swal.fire("Error", "Debe seleccionar si ha sido informado", "error");
                             }
-                        },
-                        complete:function (xhr,status) {
-                            $("#enviar").attr('disabled',false);
+
+                        } else if (datossensibles.length === 0) {
+                            console.log(datossensibles);
+                            Swal.fire(
+                                'Error',
+                                'Debe seleccionar si en el formulario hay datos sensibles',
+                                'error'
+                            );
                         }
+
+                    },
+                    complete: function (xhr, status) {
+                        $("#enviar").attr('disabled', false);
+                    }
 
                 });
             });

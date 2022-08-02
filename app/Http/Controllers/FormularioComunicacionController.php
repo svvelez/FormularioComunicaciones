@@ -33,6 +33,42 @@ class FormularioComunicacionController extends Controller
     public function store(Request $request)
     {
 
+//        //Validación de reglas
+//        $validator = validator()->make($request, $rules, $messages);
+//        if ($validator->fails()) {
+//            return response()->json(['success' => 'false', 'mensaje' => $validator->errors()->first()]);
+//        }
+//
+//        //Registro
+//        public $rules = [
+//        'autorizacion'=>'required',
+//        'autorizacionmensajes'=>'required',
+//        'fecha'=>'required',
+//        'actualizacionnombre'=>'required',
+//        'actualizaciontipodedocumento'=>'required',
+//        'actualizacionnumerodocumento'=>'required',
+//        'actualizacioncelular'=>'required',
+//        'actualizacionciudad'=>'required',
+//        'actualizaciondireccion'=>'required',
+//        'datossensibles'=>'required',
+//    ];
+//
+//        public $messages = [
+//        'tipo_paciente_id.required' => 'Debe ingresar un tipo de documento',
+//        'paciente_id.required' => 'Debe ingresar un numero de documento',
+//        'numero_oc.required' => 'Debe ingresar un numero orden o cuenta'
+//    ];
+
+
+        $tercero = $request->terceroautorizado;
+
+        if ($tercero =="si"){
+            $rules1=[
+                'terceroautorizado'=>'required'
+            ];
+
+        }
+
        $rules = [
            'autorizacion'=>'required',
            'autorizacionmensajes'=>'required',
@@ -42,19 +78,19 @@ class FormularioComunicacionController extends Controller
            'actualizacionnumerodocumento'=>'required',
            'actualizacioncelular'=>'required',
            'actualizacionciudad'=>'required',
-           'actualizacioncorreo'=>'required',
            'actualizaciondireccion'=>'required',
            'datossensibles'=>'required',
-       ];
+      ];
 
        $messages =[
             '',
        ];
 
-       $this->validate($request, $rules,$messages);
+       $this->validate($request,$rules,$messages);
 
 
 
+//envio de correos
        $destino_nombre=$request->nombre;
         $destino_email="practicantedevtic1@dime.com.co";
         $destino_email2="andres-felipe2000@live.com";

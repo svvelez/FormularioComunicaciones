@@ -61,7 +61,7 @@
                             </div>
 
                             <div class="col ">
-                                <label style="color: #008200;"><b>Autorizo a dime clinica para envio de
+                                <label style="color: #008200;"><b>Autorizo a dime clinica para envío de
                                         mensajes:</b></label>
                                 <label>{{$formulario->autorizacionmensajes}}</label>
                             </div>
@@ -79,7 +79,7 @@
                             </div>
 
                             <div class="col ">
-                                <label style="color: #008200;">Telefono:</label>
+                                <label style="color: #008200;">Teléfono:</label>
                                 <label>{{$formulario->actualizaciontelefono}}</label>
                             </div>
 
@@ -114,7 +114,7 @@
                             </div>
 
                             <div class="col ">
-                                <label style="color: #008200;">Correo Electronico:</label>
+                                <label style="color: #008200;">Correo Electrónico:</label>
                                 <label>{{$formulario->actualizacioncorreo}}</label>
                             </div>
 
@@ -145,7 +145,7 @@
                                     </div>
 
                                     <div class="col ">
-                                        <label style="color: #008200;">Telefono:</label>
+                                        <label style="color: #008200;">Teléfono:</label>
                                         <label>{{$formulario->telefonotercero}}</label>
                                     </div>
 
@@ -180,7 +180,7 @@
                                     </div>
 
                                     <div class="col ">
-                                        <label style="color: #008200;">Correo Electronico:</label>
+                                        <label style="color: #008200;">Correo Electrónico:</label>
                                         <label>{{$formulario->correotercero}}</label>
                                     </div>
 
@@ -211,7 +211,7 @@
                                 </div>
 
                                 <div class="col ">
-                                    <label style="color: #008200;">Telefono:</label>
+                                    <label style="color: #008200;">Teléfono:</label>
                                     <label>{{$formulario->telefonoacudiente}}</label>
                                 </div>
 
@@ -246,7 +246,7 @@
                                 </div>
 
                                 <div class="col ">
-                                    <label style="color: #008200;">Correo Electronico:</label>
+                                    <label style="color: #008200;">Correo Electrónico:</label>
                                     <label>{{$formulario->correoacudiente}}</label>
                                 </div>
 
