@@ -592,7 +592,7 @@
                             <div class="col-lg-8">
                                 <div class="col form-check">
                                     <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
-                                           name="check" value="soy menor de edad"
+                                           name="check" value="simen"
                                            id="check" onclick="javascript:showContent()">
                                     <label class="label" for="anonimo">
                                         En caso del que el usuario sea menor de edad o lo requiera, debe
@@ -891,25 +891,7 @@
             }
         }
     </script>
-{{--    <script>--}}
-{{--        console.log(result)--}}
-{{--        if(result.success ==='true'){--}}
 
-{{--            Swal.fire(--}}
-{{--                'Bienvenido',--}}
-{{--                result.mensaje,--}}
-{{--                'success'--}}
-{{--            )--}}
-{{--            setTimeout(greet, 2000);--}}
-
-{{--        }else{--}}
-{{--            Swal.fire(--}}
-{{--                'Error al registrar',--}}
-{{--                result.mensaje,--}}
-{{--                'error'--}}
-{{--            )--}}
-{{--        }--}}
-{{--    </script>--}}
 
                       {{-- envio de formulario y validaciones--}}
     <script>
@@ -989,7 +971,7 @@
                 ciudadacudiente=$("#ciudadacudiente").val();
                 direccionacudiente=$("#direccionacudiente").val();
                 terceroautorizad=$("#terceroautorizado").val();
-
+                acudiente=$("#check").val();
 
                 $.ajaxSetup({
                     headers: {
@@ -1013,6 +995,7 @@
                         });
                     },
                     error: function (json, xhr, status) {
+
                         if (autorizacion.length === 0) {
                             console.log(autorizacion);
                             Swal.fire(
@@ -1071,35 +1054,41 @@
                                 'error'
                             );
 
-                        } else if (terceroautorizad==='si') {
-                            alert('hola');
 
-                            if (fechatercero === '') {
-                                Swal.fire("Error", "Debe seleccionar una fechas de tercero", "error");
-                            } else if (nombretercero === '') {
-                                Swal.fire("Error", "Debe diligenciar el nombre", "error");
-                            } else if (tipodedocumentotercero.length === 0) {
-                                Swal.fire("Error", "Debe seleccionar el tipo de documento", "error");
-                            } else if (numerodocumentotercero === '') {
-                                Swal.fire("Error", "Debe Diligenciar el número de documento", "error");
-                            } else if (celulartercero === '') {
-                                Swal.fire("Error", "Debe Diligenciar el número de celular", "error");
-                            } else if (ciudadtercero === '') {
-                                Swal.fire("Error", "Debe Diligenciar la ciudad", "error");
-                            } else if (direcciontercero === '') {
-                                Swal.fire("Error", "Debe Diligenciar la dirección", "error");
-                            } else if (leidotercero.length === 0) {
-                                Swal.fire("Error", "Debe seleccionar si ha sido informado", "error");
-                            }
-
-                        } else if (datossensibles.length === 0) {
+                        } else if (datossensibles.length == 0) {
                             console.log(datossensibles);
                             Swal.fire(
                                 'Error',
                                 'Debe seleccionar si en el formulario hay datos sensibles',
                                 'error'
                             );
+                        } else if (terceroautorizad == 'si') {
+                            console.log(terceroautorizad)
+                            if (fechatercero === '') {
+                                Swal.fire("Error", "Debe seleccionar una fecha de autorización en formulario del tercero", "error");
+                            } else if (nombretercero === '') {
+                                Swal.fire("Error", "Debe diligenciar el nombre de la tercer persona autorizada", "error");
+                            } else if (tipodedocumentotercero.length === 0) {
+                                Swal.fire("Error", "Debe seleccionar el tipo de documento de la tercer persona autorizada", "error");
+                            } else if (numerodocumentotercero === '') {
+                                Swal.fire("Error", "Debe Diligenciar el número de documento de la  tercer persona autorizada", "error");
+                            } else if (celulartercero === '') {
+                                Swal.fire("Error", "Debe Diligenciar el número de celular de la tercer persona autorizada", "error");
+                            } else if (ciudadtercero === '') {
+                                Swal.fire("Error", "Debe Diligenciar la ciudad de la tercer persona autorizada", "error");
+                            } else if (direcciontercero === '') {
+                                Swal.fire("Error", "Debe Diligenciar la dirección de la tercer persona autorizada", "error");
+                            } else if (leidotercero.length === 0) {
+                                Swal.fire("Error", "Debe seleccionar si la tercer persona ha sido informado", "error");
+                            }
+                        }else if(acudiente=='simen') {
+                            if (fechaacudiente == '') {
+                                Swal.fire("Error", "Debe fecha acudinee", "error");
+                            }
                         }
+
+
+
 
                     },
                     complete: function (xhr, status) {

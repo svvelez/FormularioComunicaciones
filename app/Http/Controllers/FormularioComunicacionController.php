@@ -33,41 +33,41 @@ class FormularioComunicacionController extends Controller
     public function store(Request $request)
     {
 
-//        //Validación de reglas
-//        $validator = validator()->make($request, $rules, $messages);
-//        if ($validator->fails()) {
-//            return response()->json(['success' => 'false', 'mensaje' => $validator->errors()->first()]);
-//        }
-//
-//        //Registro
-//        public $rules = [
-//        'autorizacion'=>'required',
-//        'autorizacionmensajes'=>'required',
-//        'fecha'=>'required',
-//        'actualizacionnombre'=>'required',
-//        'actualizaciontipodedocumento'=>'required',
-//        'actualizacionnumerodocumento'=>'required',
-//        'actualizacioncelular'=>'required',
-//        'actualizacionciudad'=>'required',
-//        'actualizaciondireccion'=>'required',
-//        'datossensibles'=>'required',
-//    ];
-//
-//        public $messages = [
-//        'tipo_paciente_id.required' => 'Debe ingresar un tipo de documento',
-//        'paciente_id.required' => 'Debe ingresar un numero de documento',
-//        'numero_oc.required' => 'Debe ingresar un numero orden o cuenta'
-//    ];
-
-
+//        VALIDACION DE CAMPOS
+        $acudiente = $request->check;
         $tercero = $request->terceroautorizado;
 
-        if ($tercero =="si"){
-            $rules1=[
-                'terceroautorizado'=>'required'
-            ];
+        $rulesTercero=[
 
+            'fechatercero'=>'required',
+            'nombretercero'=>'required',
+            'tipodedocumentotercero'=>'required',
+            'numerodocumentotercero'=>'required',
+            'celulartercero'=>'required',
+            'ciudadtercero'=>'required',
+            'leidotercero'=>'required',
+            'direcciontercero'=>'required',
+        ];
+
+        if ($tercero =="si"){
+            $this->validate($request,$rulesTercero);
         }
+
+        $rulesAcudiente=[
+            'fechaacudiente'=>'required',
+            'nombreacudiente'=>'required',
+            'tipodedocumentoacudiente'=>'required',
+            'numerodocumentoacudiente'=>'required',
+            'celularacudiente'=>'required',
+            'ciudadacudiente'=>'required',
+            'leidoacudiente'=>'required',
+            'direccionacudiente'=>'required',
+        ];
+
+        if ($acudiente =="simen"){
+            $this->validate($request,$rulesAcudiente);
+        }
+
 
        $rules = [
            'autorizacion'=>'required',
@@ -79,11 +79,12 @@ class FormularioComunicacionController extends Controller
            'actualizacioncelular'=>'required',
            'actualizacionciudad'=>'required',
            'actualizaciondireccion'=>'required',
+           'leido'=>'required',
            'datossensibles'=>'required',
       ];
 
        $messages =[
-            '',
+            ''
        ];
 
        $this->validate($request,$rules,$messages);
