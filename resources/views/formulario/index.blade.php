@@ -30,7 +30,7 @@
                                 </p>
 
                                 {{-- scroll de politica de tratamiento de datos personales--}}
-                                <div style="border : solid 1px black;background : #ffffff;color : black;padding : 4px;width : 100%;height : 320px;
+                                <div style="border : solid 1px black;background : #ffffff;color : black;padding : 4px;width : 100%;height : 300px;
                                 overflow : auto; marginwidth = 20px;">
 
                                     <ul>

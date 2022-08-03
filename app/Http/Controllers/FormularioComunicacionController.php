@@ -56,6 +56,7 @@ class FormularioComunicacionController extends Controller
             'ciudadtercero.required' => 'ingrese ciudad de la tercer persona autorizada',
             'correotercero.required' => 'ingrese correo de la tercer persona autorizada',
             'direcciontercero.required' => 'ingrese dirección de la tercer persona autorizada',
+            'leidotercero.required'=>'Debe confirmar si ha leido y ha sido informado la tercer persona autorizada',
         ];
 
 
@@ -82,6 +83,7 @@ class FormularioComunicacionController extends Controller
             'ciudadacudiente.required' => 'ingrese ciudad del acudiente',
             'correoacudiente.required' => 'ingrese correo del acudiente',
             'direccionacudiente.required' => 'ingrese dirección del acudiente',
+            'leidoacudiente.required'=>'Debe confirmar si ha leido y ha sido informado el acudiente',
         ];
 
         if ($acudiente =="siacudiente"){
@@ -105,7 +107,7 @@ class FormularioComunicacionController extends Controller
 
        $messages =[
            'autorizacion.required' => 'Debe seleccionar si autoriza el tratamiento de datos personales',
-           'autorizacionmensajes.required' => 'Debe selaccionar si autoriza el envio de mensajes',
+           'autorizacionmensajes.required' => 'Debe seleccionar si autoriza el envío de mensajes',
            'fecha.required' => 'indique fecha de la autorización',
            'actualizacionnombre.required' => 'ingrese nombre ',
            'actualizaciontipodedocumento.required' => 'seleccione tipo de documento',
@@ -114,7 +116,8 @@ class FormularioComunicacionController extends Controller
            'actualizacionciudad.required' => 'ingrese ciudad',
            'actualizacioncorreo.required' => 'ingrese correo',
            'actualizaciondireccion.required' => 'ingrese dirección',
-           'datossensibles.required' => 'debe seleccionar alguna opción',
+           'leido.required'=>'Debe confirmar si ha leido y ha sido informado',
+           'datossensibles.required' => 'debe seleccionar si el formulario contiene datos sensibles',
 
        ];
 
