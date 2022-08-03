@@ -38,7 +38,6 @@ class FormularioComunicacionController extends Controller
         $tercero = $request->terceroautorizado;
 
         $rulesTercero=[
-
             'fechatercero'=>'required',
             'nombretercero'=>'required',
             'tipodedocumentotercero'=>'required',
@@ -48,24 +47,45 @@ class FormularioComunicacionController extends Controller
             'leidotercero'=>'required',
             'direcciontercero'=>'required',
         ];
+        $messagesTercero =[
+            'fechatercero.required' => 'indique fecha de autorización en formulario de tercer autorizado',
+            'nombretercero.required' => 'ingrese nombre de la tercer persona autorizada',
+            'tipodedocumentotercero.required' => 'seleccione tipo de documento de la tercer persona autorizada',
+            'numerodocumentotercero.required' => 'ingrese número de documento de la tercer persona autorizada',
+            'celulartercero.required' => 'ingrese número de celular de la tercer persona autorizada',
+            'ciudadtercero.required' => 'ingrese ciudad de la tercer persona autorizada',
+            'correotercero.required' => 'ingrese correo de la tercer persona autorizada',
+            'direcciontercero.required' => 'ingrese dirección de la tercer persona autorizada',
+        ];
+
 
         if ($tercero =="si"){
-            $this->validate($request,$rulesTercero);
+            $this->validate($request,$rulesTercero,$messagesTercero);
         }
 
         $rulesAcudiente=[
             'fechaacudiente'=>'required',
             'nombreacudiente'=>'required',
             'tipodedocumentoacudiente'=>'required',
-            'numerodocumentoacudiente'=>'required',
+            'numerodedocumentoacudiente'=>'required',
             'celularacudiente'=>'required',
             'ciudadacudiente'=>'required',
             'leidoacudiente'=>'required',
             'direccionacudiente'=>'required',
         ];
+        $messagesAcudiente =[
+            'fechaacudiente.required' => 'indique fecha de la autorización en formulario del acudiente',
+            'nombreacudiente.required' => 'ingrese nombre del acudiente ',
+            'tipodedocumentoacudiente.required' => 'seleccione tipo de documento del acudiente',
+            'numerodedocumentoacudiente.required' => 'ingrese número de documento del acudiente',
+            'celularacudiente.required' => 'ingrese número de celular del acudiente',
+            'ciudadacudiente.required' => 'ingrese ciudad del acudiente',
+            'correoacudiente.required' => 'ingrese correo del acudiente',
+            'direccionacudiente.required' => 'ingrese dirección del acudiente',
+        ];
 
-        if ($acudiente =="simen"){
-            $this->validate($request,$rulesAcudiente);
+        if ($acudiente =="siacudiente"){
+            $this->validate($request,$rulesAcudiente,$messagesAcudiente);
         }
 
 
@@ -84,7 +104,18 @@ class FormularioComunicacionController extends Controller
       ];
 
        $messages =[
-            ''
+           'autorizacion.required' => 'Debe seleccionar si autoriza el tratamiento de datos personales',
+           'autorizacionmensajes.required' => 'Debe selaccionar si autoriza el envio de mensajes',
+           'fecha.required' => 'indique fecha de la autorización',
+           'actualizacionnombre.required' => 'ingrese nombre ',
+           'actualizaciontipodedocumento.required' => 'seleccione tipo de documento',
+           'actualizacionnumerodocumento.required' => 'ingrese número de documento',
+           'actualizacioncelular.required' => 'ingrese número de celular',
+           'actualizacionciudad.required' => 'ingrese ciudad',
+           'actualizacioncorreo.required' => 'ingrese correo',
+           'actualizaciondireccion.required' => 'ingrese dirección',
+           'datossensibles.required' => 'debe seleccionar alguna opción',
+
        ];
 
        $this->validate($request,$rules,$messages);

@@ -592,7 +592,7 @@
                             <div class="col-lg-8">
                                 <div class="col form-check">
                                     <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
-                                           name="check" value="simen"
+                                           name="check" value="siacudiente"
                                            id="check" onclick="javascript:showContent()">
                                     <label class="label" for="anonimo">
                                         En caso del que el usuario sea menor de edad o lo requiera, debe
@@ -741,7 +741,7 @@
                                         <div class="col ">
                                             <label style="text-align: left;">Dirección de correspondencia</label><label
                                                 style="color: red;text-align: left;">*</label>
-                                            <input class="form-control" type="text" name="direccionacudiente" id="no"
+                                            <input class="form-control" type="text" name="direccionacudiente" id="direccionacudiente"
                                                    style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                    placeholder="">
@@ -751,7 +751,7 @@
                                     <div class="col-lg-4">
                                         <div class="col ">
                                             <label style="text-align: left;">Celular</label>
-                                            <input class="form-control" type="text" name="celularacudiente2" id="no"
+                                            <input class="form-control" type="text" name="celularacudiente2" id="celularacudiente2"
                                                    style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                    placeholder="">
@@ -764,7 +764,7 @@
                                     <div class="col-lg-4">
                                         <div class="col ">
                                             <label style="text-align: left;">Correo Electrónico</label>
-                                            <input class="form-control" type="text" name="correoacudiente" id="si"
+                                            <input class="form-control" type="text" name="correoacudiente" id="correoacudiente"
                                                    style="cursor: pointer;
                                                     width: 420px;border-radius: 10px;margin-center: 20px;border : solid 1px #729271;"
                                                    placeholder="">
@@ -995,100 +995,7 @@
                         });
                     },
                     error: function (json, xhr, status) {
-
-                        if (autorizacion.length === 0) {
-                            console.log(autorizacion);
-                            Swal.fire(
-                                'Error',
-                                'Debe seleccionar si desea autorizar el tratamiento de datos persoanles',
-                                'error'
-                            );
-                        } else if (autorizacionmensajes.length === 0) {
-                            console.log(autorizacionmensajes);
-                            Swal.fire(
-                                'Error',
-                                'Debe seleccionar si desea recibir mensajes',
-                                'error'
-                            );
-                        } else if (fecha === '') {
-                            Swal.fire(
-                                'Error',
-                                'Debe seleccionar una fecha',
-                                'error'
-                            );
-                        } else if (nombre === '') {
-                            Swal.fire(
-                                'Error',
-                                'Debe diligenciar un nombre',
-                                'error'
-                            );
-                        } else if (tipdocumento.length === 0) {
-                            console.log(tipdocumento);
-                            Swal.fire(
-                                'Error',
-                                'Debe seleccionar un tipo de documento',
-                                'error'
-                            );
-                        } else if (numerodocumento === '') {
-                            console.log('jum');
-                            Swal.fire('Error',
-                                'Debe escribir su número de documento', 'error');
-                        } else if (celular === '') {
-                            console.log('error cel');
-                            swal.fire('Error',
-                                'Debe escribir su número de celular', 'error');
-                        } else if (ciudad === '') {
-                            console.log('error ciudad')
-                            swal.fire(" Error ",
-                                "Debe escribir su ciudad", "error");
-                        } else if (direccion === '') {
-                            console.log('error direccion');
-                            swal.fire(" Error ",
-                                "Debe escribir su direccion", "error");
-
-                        } else if (leido.length === 0) {
-                            console.log(leido);
-                            Swal.fire(
-                                'Error',
-                                'Debe seleccionar si ha sido informado',
-                                'error'
-                            );
-
-
-                        } else if (datossensibles.length == 0) {
-                            console.log(datossensibles);
-                            Swal.fire(
-                                'Error',
-                                'Debe seleccionar si en el formulario hay datos sensibles',
-                                'error'
-                            );
-                        } else if (terceroautorizad == 'si') {
-                            console.log(terceroautorizad)
-                            if (fechatercero === '') {
-                                Swal.fire("Error", "Debe seleccionar una fecha de autorización en formulario del tercero", "error");
-                            } else if (nombretercero === '') {
-                                Swal.fire("Error", "Debe diligenciar el nombre de la tercer persona autorizada", "error");
-                            } else if (tipodedocumentotercero.length === 0) {
-                                Swal.fire("Error", "Debe seleccionar el tipo de documento de la tercer persona autorizada", "error");
-                            } else if (numerodocumentotercero === '') {
-                                Swal.fire("Error", "Debe Diligenciar el número de documento de la  tercer persona autorizada", "error");
-                            } else if (celulartercero === '') {
-                                Swal.fire("Error", "Debe Diligenciar el número de celular de la tercer persona autorizada", "error");
-                            } else if (ciudadtercero === '') {
-                                Swal.fire("Error", "Debe Diligenciar la ciudad de la tercer persona autorizada", "error");
-                            } else if (direcciontercero === '') {
-                                Swal.fire("Error", "Debe Diligenciar la dirección de la tercer persona autorizada", "error");
-                            } else if (leidotercero.length === 0) {
-                                Swal.fire("Error", "Debe seleccionar si la tercer persona ha sido informado", "error");
-                            }
-                        }else if(acudiente=='simen') {
-                            if (fechaacudiente == '') {
-                                Swal.fire("Error", "Debe fecha acudinee", "error");
-                            }
-                        }
-
-
-
+                        Swal.fire("Error", json.responseJSON.message, "error");
 
                     },
                     complete: function (xhr, status) {
