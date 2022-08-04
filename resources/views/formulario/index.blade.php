@@ -139,7 +139,7 @@
                             políticas institucionales y las demás que se refieran a la información personal
                             necesaria para los fines mencionados en la presente autorización, sea en general
                             administrada y en especial: captada, tratada, procesada, operada, verificada, y
-                            usada
+                            usada.
                         </p>
 
 
@@ -147,7 +147,7 @@
                             <div class="col-lg-1 ">
                                 <div class="col form-check">
                                     <input style="border : solid 1px #729271;" class="form-check-input" type="radio"
-                                           name="autorizacion" id="autorizacion" value="si">
+                                           name="autorizacion" id="autorizacionsi" value="si" onclick="javascript:showAutorizacionSi()">
                                     <label class="form-check-label" for="si">
                                         Si
                                     </label>
@@ -157,7 +157,7 @@
                             <div class="col-lg-1">
                                 <div class="col form-check">
                                     <input style="border : solid 1px #729271;" class="form-check-input" type="radio"
-                                           name="autorizacion" id="autorizacion" value="no">
+                                           name="autorizacion" id="autorizacionno" value="no" onclick="javascript:showAutorizacionNo()">
                                     <label class="form-check-label" for="no">
                                         No
                                     </label>
@@ -367,10 +367,11 @@
                                 </div>
                             </div>
 
+
                             <div class="col-lg-4">
                                 <div class="col">
-                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
-                                           name="propio" id="propio" value="propio">
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="radio"
+                                           name="terceroautorizado" id="propio" value="propio" onclick="javascript:showProp()">
                                     <label class="form-check-label" for="propio">Propio </label>
                                 </div>
                             </div>
@@ -379,7 +380,7 @@
                             {{--CHECK TERCERO AUTORIZADO--}}
                             <div class="col-lg-4">
                                 <div class="col ">
-                                    <input style="border : solid 1px #729271;" class="form-check-input" type="checkbox"
+                                    <input style="border : solid 1px #729271;" class="form-check-input" type="radio"
                                            name="terceroautorizado" id="terceroautorizado" value="si"
                                            onclick="javascript:showConte()">
 
@@ -775,7 +776,7 @@
                                     <div class="col-lg-4">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;" class="form-check-input"
-                                                   type="checkbox" name="propioac"
+                                                   type="radio" name="acudiente"
                                                    id="propio">
                                             <label class="form-check-label" for="propio">
                                                 Propio
@@ -785,7 +786,7 @@
                                     <div class="col-lg-4">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;" class="form-check-input"
-                                                   type="checkbox"
+                                                   type="radio"
                                                    name="acudiente" id="acudiente">
                                             <label class="form-check-label" for="acudiente">
                                                 Acudiente
@@ -813,6 +814,7 @@
 
                             </div>
                             <p>
+                            <div id="contentDatosSensibles" style="display: block;">
                             <div>
                                 <p>¿Considera usted que la información que ha suministrado clasifica como
                                     información sensible?</p>
@@ -828,7 +830,7 @@
                                     <div class="col-lg-1">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;" class="form-check-input"
-                                                   type="radio" name="datossensibles" id="si" value="si">
+                                                   type="radio" name="datossensibles" id="datossensibles" value="si">
                                             <label class="form-check-label" for="si">
                                                 Si
                                             </label>
@@ -838,7 +840,7 @@
                                     <div class="col-lg-1">
                                         <div class="col form-check">
                                             <input style="border : solid 1px #729271;" class="form-check-input"
-                                                   type="radio" name="datossensibles" id="no" value="no">
+                                                   type="radio" name="datossensibles" id="datossensibles" value="no">
                                             <label class="form-check-label" for="no">
                                                 No
                                             </label>
@@ -846,6 +848,7 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         </div>
 
                         <p>
@@ -892,12 +895,58 @@
         }
     </script>
 
+{{--    ocultar tercer formulario--}}
+<script>
+    function showProp() {
+        element = document.getElementById("contenttercero");
+        check = document.getElementById("propio");
 
-                      {{-- envio de formulario y validaciones--}}
+
+        if (check.checked) {
+            element.style.display = 'none';
+
+        } else {
+            element.style.display = 'block';
+        }
+    }
+</script>
+
+    <script>
+  function showAutorizacionNo(){
+      element = document.getElementById("contentDatosSensibles");
+      check = document.getElementById("autorizacionno");
+
+
+      if (check.checked) {
+          element.style.display = 'none';
+
+      } else {
+          element.style.display = 'block';
+      }
+  }
+    </script>
+
+    <script>
+        function showAutorizacionSi(){
+            element = document.getElementById("contentDatosSensibles");
+            check = document.getElementById("autorizacionsi");
+
+
+            if (check.checked) {
+                element.style.display = 'block';
+
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
+
+
+    {{-- envio de formulario y validaciones--}}
     <script>
         $(document).ready(function () {
 
-          tipdocumento = [];
+            tipdocumento = [];
             datossensibles = [];
             autorizacion = [];
             autorizacionmensajes = [];
@@ -911,9 +960,6 @@
             $("#formulario").submit(function (e) {
                 e.preventDefault();
 
-                $("input[name='actualizaciontipodedocumento']:checked").each(function () {
-                    tipdocumento.push($(this).val());
-                });
 
                 $("input[name='datossensibles']:checked").each(function () {
                     datossensibles.push($(this).val());
@@ -923,55 +969,8 @@
                     autorizacion.push($(this).val());
                 });
 
-                $("input[name='autorizacionmensajes']:checked").each(function () {
-                    autorizacionmensajes.push($(this).val());
-                });
 
-                $("input[name='leido']:checked").each(function () {
-                    leido.push($(this).val());
-                });
 
-                $("input[name='tipodedocumentotercero']:checked").each(function () {
-                    tipodedocumentotercero.push($(this).val());
-                });
-
-                $("input[name='leidotercero']:checked").each(function () {
-                    leidotercero.push($(this).val());
-                });
-
-                $("input[name='tipodedocumentoacudiente']:checked").each(function () {
-                    tipodedocumentotercero.push($(this).val());
-                });
-
-                $("input[name='leidoacudiente']:checked").each(function () {
-                    leidotercero.push($(this).val());
-                });
-
-                $("input[name='terceroautorizado']:checked").each(function () {
-                    terceroautorizado.push($(this).val());
-                });
-
-                fecha = $("#fecha").val();
-                nombre = $("#actualizacionnombre").val();
-                numerodocumento = $("#actualizacionnumerodocumento").val();
-                celular = $("#actualizacioncelular").val();
-                ciudad = $("#actualizacionciudad").val();
-                direccion = $("#actualizaciondireccion").val();
-                tercero=$("#terceroautorizado").val();
-                fechatercero=$("#fechatercero").val();
-                nombretercero=$("#nombretercero").val();
-                numerodocumentotercero=$("#numerodocumentotercero").val();
-                celulartercero=$("#celulartercero").val();
-                ciudadtercero=$("#ciudadtercero").val();
-                direcciontercero=$("#direcciontercero").val();
-                fechaacudiente=$("#fechaacudiente").val();
-                nombreacudiente=$("#nombreacudiente").val();
-                numerodocumentoacudiente=$("#numerodocumentoacudiente").val();
-                celularacudiente=$("#celularacudiente").val();
-                ciudadacudiente=$("#ciudadacudiente").val();
-                direccionacudiente=$("#direccionacudiente").val();
-                terceroautorizad=$("#terceroautorizado").val();
-                acudiente=$("#check").val();
 
                 $.ajaxSetup({
                     headers: {
