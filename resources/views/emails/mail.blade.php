@@ -82,6 +82,14 @@
                                 <label style="color: #008200;">Teléfono:</label>
                                 <label>{{$formulario->actualizaciontelefono}}</label>
                             </div>
+                            <div class="col ">
+                                <label style="color: #008200;">Celular:</label>
+                                <label>{{$formulario->actualizacioncelular}}</label>
+                            </div>
+                            <div class="col ">
+                                <label style="color: #008200;">Celular(2):</label>
+                                <label>{{$formulario->actualizacioncelular2}}</label>
+                            </div>
 
                             <div class="col ">
                                 <label style="color: #008200;">Tipo de documento:</label>
@@ -93,10 +101,7 @@
                                 <label>{{$formulario->actualizacionnumerodocumento}}</label>
                             </div>
 
-                            <div class="col ">
-                                <label style="color: #008200;">Celular:</label>
-                                <label>{{$formulario->actualizacioncelular}}</label>
-                            </div>
+
 
                             <div class="col ">
                                 <label style="color: #008200;">Ciudad:</label>
@@ -108,10 +113,7 @@
                                 <label>{{$formulario->actualizaciondireccion}}</label>
                             </div>
 
-                            <div class="col ">
-                                <label style="color: #008200;">Celular(2):</label>
-                                <label>{{$formulario->actualizacioncelular2}}</label>
-                            </div>
+
 
                             <div class="col ">
                                 <label style="color: #008200;">Correo Electrónico:</label>
@@ -148,6 +150,14 @@
                                         <label style="color: #008200;">Teléfono:</label>
                                         <label>{{$formulario->telefonotercero}}</label>
                                     </div>
+                                    <div class="col ">
+                                        <label style="color: #008200;">Celular:</label>
+                                        <label>{{$formulario->celulartercero}}</label>
+                                    </div>
+                                    <div class="col ">
+                                        <label style="color: #008200;">Celular(2):</label>
+                                        <label>{{$formulario->celular2tercero}}</label>
+                                    </div>
 
                                     <div class="col ">
                                         <label style="color: #008200;">Tipo de documento:</label>
@@ -159,10 +169,7 @@
                                         <label>{{$formulario->numerodocumentotercero}}</label>
                                     </div>
 
-                                    <div class="col ">
-                                        <label style="color: #008200;">Celular:</label>
-                                        <label>{{$formulario->celulartercero}}</label>
-                                    </div>
+
 
                                     <div class="col ">
                                         <label style="color: #008200;">Ciudad:</label>
@@ -174,10 +181,6 @@
                                         <label>{{$formulario->direcciontercero}}</label>
                                     </div>
 
-                                    <div class="col ">
-                                        <label style="color: #008200;">Celular(2):</label>
-                                        <label>{{$formulario->celular2tercero}}</label>
-                                    </div>
 
                                     <div class="col ">
                                         <label style="color: #008200;">Correo Electrónico:</label>
@@ -214,7 +217,14 @@
                                     <label style="color: #008200;">Teléfono:</label>
                                     <label>{{$formulario->telefonoacudiente}}</label>
                                 </div>
-
+                                <div class="col ">
+                                    <label style="color: #008200;">Celular:</label>
+                                    <label>{{$formulario->celularacudiente}}</label>
+                                </div>
+                                <div class="col ">
+                                    <label style="color: #008200;">Celular(2):</label>
+                                    <label>{{$formulario->celularacudiente2}}</label>
+                                </div>
                                 <div class="col ">
                                     <label style="color: #008200;">Tipo de documento:</label>
                                     <label>{{$formulario->tipodedocumentoacudiente}}</label>
@@ -225,10 +235,7 @@
                                     <label>{{$formulario->numerodedocumentoacudiente}}</label>
                                 </div>
 
-                                <div class="col ">
-                                    <label style="color: #008200;">Celular:</label>
-                                    <label>{{$formulario->celularacudiente}}</label>
-                                </div>
+
 
                                 <div class="col ">
                                     <label style="color: #008200;">Ciudad:</label>
@@ -240,10 +247,7 @@
                                     <label>{{$formulario->direccionacudiente}}</label>
                                 </div>
 
-                                <div class="col ">
-                                    <label style="color: #008200;">Celular(2):</label>
-                                    <label>{{$formulario->celularacudiente2}}</label>
-                                </div>
+
 
                                 <div class="col ">
                                     <label style="color: #008200;">Correo Electrónico:</label>

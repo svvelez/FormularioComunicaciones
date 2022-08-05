@@ -6,6 +6,15 @@
 
 
     <div class="container">
+
+        <div class="col-xs-12 col-md-9">
+{{--            <hr size="3px"  style="color:  #2f9935;width: 1290px">--}}
+{{--<img class="img-responsive" style="width:300px;height: 130px" src="lOHO.jpg"/><h3 style="color: #2f9935;text-align: right">AUTORIZACIÓN</h3>--}}
+{{--            <b><hr size="3px"  style="color:  #1f9856; width: 1290px"></b>--}}
+            <img style="width:1290px;height: 170px" class="img-responsive" src="logodi.png"/>
+        </div>
+
+
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
 
             <form action="{{route('formulario.store')}}" id="formulario" method="post">
@@ -17,8 +26,8 @@
                             <!-- Box Header -->
                             <P>
                             <div class="box-header with-border">
-                                <h3 style="color:  #008200; text-align: left;"><b>AUTORIZACIÓN DE TRATAMIENTO DE DATOS
-                                        PERSONALES</b></h3>
+{{--                                <h3 style="color:  #008200; text-align: left;"><b>AUTORIZACIÓN DE TRATAMIENTO DE DATOS--}}
+{{--                                        PERSONALES</b></h3>--}}
                             </div>
 
                             <P>
